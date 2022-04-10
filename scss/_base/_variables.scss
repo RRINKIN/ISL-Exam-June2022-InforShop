@@ -1,8 +1,11 @@
-$size-main : 16px ;
+$size-main : 16 px ;
 $font-main : calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif ;
 $colors: (
-    main: #263585,
-    secondary: #216eb8,
+    backgroundDarkMain: #263585,
+    backgroundDarkSecondary: #216eb8,
+    backgroundLightMain: whitesmoke,
+    backgroundLightSecondary: white,
     decoration: #e37823,
+    textOnLight: white,
+    textOnDark: #263585, 
 );
-

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/screen.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>InforShop Inscription</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="l-nav-logo">
+            </div>
+            <div class="l-nav-menu">
+                <div class="l-nav-burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>                
+            </div>
+            <div class="l-nav-icons">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="l-nav-search">
+                <form action="post.php">
+                    <div>
+                        <input type="text" name="Search" id="Search" value="Chercher un produit ...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+            </div>
+        </nav> 
+    </header>
+    <main>
+        <h1>Inscription Inforshop</h1>
+        <h2>Inscription</h2>
+        <div>
+            <i class="fas fa-home"></i>
+            <p>></p>
+            <p>Inscription</p>
+        </div>
+        <form action="post.php" method="post">
+            <div>
+                <label>Email*</label>
+                <input type="text" name="Email" id="Email" required>
+            </div>
+            <div>
+                <label>Mot de passe*</label>
+                <input type="password" name="Password" id="Password" required>
+            </div>
+            <div>
+                <label>Mot de Passe*</label>
+                <input type="password" name="PasswordConfirm" id="PasswordConfirm" required>
+            </div>
+            <div>
+                <label>Prénom*</label>
+                <input type="text" name="firstName" id="firstName" required>
+            </div>
+            <div>
+                <label>Nom*</label>
+                <input type="text" name="lastName" id="lastName" required>
+            </div>
+            <div>
+                <label>Date de naissance*</label>
+                <input type="date" name="birthDate" id="birthDate" required>
+            </div>
+            <div>
+                <label>J'ai lu et approuvé les <a href="#"> CGV</a> ...*</label>
+                <input type="checkbox" name="CGV" id="CGV" required>
+            </div>
+            <button type="button" name="inscription">
+                <i class="fas fa-check"></i>
+                Inscription
+            </button>
+        </form>
+    </main>
+    <footer>
+        <div class="l-footer">
+            <p>
+                Inforshop.store & site with <i class="fas fa-heart"></i> by <a href="https://github.com/RRINKIN">RAF</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

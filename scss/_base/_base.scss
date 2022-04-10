@@ -1,4 +1,6 @@
 body {
     max-width: 1100px;
-    background-color: red;
+    background-color: map-get($colors, backgroundLight);
+    font-family: $font-main;
+    font-size: $size-main;
 }
