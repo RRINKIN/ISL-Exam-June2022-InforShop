@@ -1,0 +1,74 @@
+header {
+    background-size: cover;
+    max-width: map-get($screenSize, smartphoneMaxScreenSize);
+    background: map-get($colors, gradient);
+}
+
+.l-nav-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// logo
+.l-nav-logo-wrapper {
+    background-color: map-get($colors, backgroundLightSecondary);
+    border-radius: 0 0 10% 10%;
+    height: 3.5rem;
+    width: 5rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-nav-logo {
+    background-image: url("../images/inforshop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3rem;
+    width: 4rem;
+}
+
+// burger
+.l-nav-menu-wrapper {
+    background-color: map-get($colors, backgroundDarkMain);
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0 0 0 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-nav-burger {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars {
+    color: map-get($colors, decoration);
+    font-size: 1.5rem;
+}
+
+.l-nav-menu ul {
+    display: none;
+}
+
+// icons
+.l-nav-icons i,p {
+    color: map-get($colors, textOnLight);
+    font-size: 1.5rem;
+}
+
+.l-nav-icons p {
+    font-size: 0.7rem;
+}
+
+
+

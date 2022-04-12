@@ -1,5 +1,8 @@
-$size-main : 16 px ;
 $font-main : calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif ;
+$fontSize: (
+    textMain: 16px,
+    h1: 4rem, 
+);
 $colors: (
     backgroundDarkMain: #263585,
     backgroundDarkSecondary: #216eb8,
@@ -8,4 +11,13 @@ $colors: (
     decoration: #e37823,
     textOnLight: white,
     textOnDark: #263585, 
+    gradient: linear-gradient(45deg, #216eb8, #263585),
+);
+$screenSize: (
+    smartphoneMinScreenSize: 1px,
+    tabletMinScreenSize: 331px,
+    laptopMinScreenSize: 661px,
+    smartphoneMaxScreenSize: 330px,
+    tabletMaxScreenSize: 660px,
+    laptopMaxScreenSize: 1100px,
 );

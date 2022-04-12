@@ -1,6 +1,11 @@
-body {
-    max-width: 1100px;
-    background-color: map-get($colors, backgroundLight);
+html {
     font-family: $font-main;
-    font-size: $size-main;
+    font-size: map-get($fontSize, textMain);
+    background-color: map-get($colors, backgroundLightSecondary);
+}
+
+body {
+    max-width: map-get($screenSize, smartphoneMaxScreenSize);
+    background-color: map-get($colors, backgroundLightMain);
+    margin: 0px auto;
 }

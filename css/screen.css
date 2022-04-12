@@ -1,6 +1,109 @@
-body {
-  max-width: 1100px;
+html {
   font-family: calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-  font-size: 16 px;
+  font-size: 16px;
+  background-color: white;
+}
+
+body {
+  max-width: 330px;
+  background-color: whitesmoke;
+  margin: 0px auto;
+}
+
+header {
+  background-size: cover;
+  max-width: 330px;
+  background: linear-gradient(45deg, #216eb8, #263585);
+}
+
+.l-nav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-nav-logo-wrapper {
+  background-color: white;
+  border-radius: 0 0 10% 10%;
+  height: 3.5rem;
+  width: 5rem;
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-nav-logo {
+  background-image: url("../images/inforshop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 3rem;
+  width: 4rem;
+}
+
+.l-nav-menu-wrapper {
+  background-color: #263585;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 0 0 0 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-nav-burger {
+  height: 3rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-bars {
+  color: #e37823;
+  font-size: 1.5rem;
+}
+
+.l-nav-menu ul {
+  display: none;
+}
+
+.l-nav-icons i, p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.l-nav-icons p {
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=screen.css.map */

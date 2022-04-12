@@ -10,22 +10,35 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="l-nav-logo">
-            </div>
-            <div class="l-nav-menu">
-                <div class="l-nav-burger">
-                    <i class="fas fa-bars"></i>
+        <nav class="l-nav">
+            <div class="l-nav-top">
+                <div class="l-nav-logo-wrapper">
+                    <div class="l-nav-logo">
+                    </div>
                 </div>
-                <ul>
-                    <li><a href="index.html">Acceuil</a></li>
-                    <li><a href="produits.html">Produits</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>                
+                <div class="l-nav-menu">
+                    <div class="l-nav-menu-wrapper">
+                        <div class="l-nav-burger">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>                
+                </div>
+                </div>
             </div>
             <div class="l-nav-icons">
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
+                <div class="l-nav-icons-account">
+                    <i class="fas fa-user"></i>
+                    <p>Compte</p>
+                </div>
+                <div class="l-nav-icons-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Panier</p>
+                </div>
             </div>
             <div class="l-nav-search">
                 <form action="post.php">
@@ -38,13 +51,12 @@
         </nav> 
     </header>
     <main>
-        <h1>Inscription Inforshop</h1>
-        <h2>Inscription</h2>
         <div>
             <i class="fas fa-home"></i>
             <p>></p>
             <p>Inscription</p>
         </div>
+        <h1>Inscription Inforshop</h1>
         <form action="post.php" method="post">
             <div>
                 <label>Email*</label>
