@@ -10,6 +10,11 @@ body {
   margin: 0px auto;
 }
 
+h1 {
+  font-size: 1rem;
+  color: #263585;
+}
+
 header {
   background-size: cover;
   max-width: 330px;
@@ -135,5 +140,116 @@ header {
   border: 0;
   color: #918e8e;
   margin: auto;
+}
+
+footer {
+  background-size: cover;
+  max-width: 330px;
+  background: linear-gradient(45deg, #216eb8, #263585);
+  padding-bottom: 1rem;
+}
+
+.l-footer p {
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.fa-heart {
+  color: white;
+}
+
+.l-main-ariane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.l-main-ariane-block, .l-main-ariane-icon {
+  background-color: white;
+  height: 2rem;
+  width: auto;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.l-main-ariane-block p {
+  color: #918e8e;
+  font-size: 1rem;
+  margin: auto;
+}
+
+.l-main-ariane-sign p {
+  color: #e37823;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+.l-main-form {
+  background-color: white;
+  margin: 1rem;
+  color: #263585;
+}
+
+.l-main-form h1 {
+  padding: 1rem;
+  color: #263585;
+}
+
+.l-main-form-block label {
+  display: block;
+  padding: 0 1rem;
+}
+
+.l-main-form-block input {
+  border: 0;
+  border-bottom: 1px solid #263585;
+  width: 90%;
+  padding: 0;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.l-main-form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 1rem;
+}
+
+.l-main-form-button {
+  margin: 1rem;
+  border: none;
+  height: 2rem;
+  border-radius: 0.3rem;
+  background-color: #918e8e;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 1rem;
+}
+
+.fa-check {
+  color: white;
+  margin: 0 1rem 0 0;
 }
 /*# sourceMappingURL=screen.css.map */

@@ -51,51 +51,59 @@
         </nav> 
     </header>
     <main>
-        <div>
-            <i class="fas fa-home"></i>
-            <p>></p>
-            <p>Inscription</p>
+        <div class="l-main-ariane">
+            <div class="l-main-ariane-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="l-main-ariane-sign">
+                <p>></p>
+            </div>
+            <div class="l-main-ariane-block">
+                <p>Inscription</p>
+            </div>
         </div>
-        <h1>Inscription Inforshop</h1>
-        <form action="post.php" method="post">
-            <div>
-                <label>Email*</label>
-                <input type="text" name="Email" id="Email" required>
-            </div>
-            <div>
-                <label>Mot de passe*</label>
-                <input type="password" name="Password" id="Password" required>
-            </div>
-            <div>
-                <label>Mot de Passe*</label>
-                <input type="password" name="PasswordConfirm" id="PasswordConfirm" required>
-            </div>
-            <div>
-                <label>Prénom*</label>
-                <input type="text" name="firstName" id="firstName" required>
-            </div>
-            <div>
-                <label>Nom*</label>
-                <input type="text" name="lastName" id="lastName" required>
-            </div>
-            <div>
-                <label>Date de naissance*</label>
-                <input type="date" name="birthDate" id="birthDate" required>
-            </div>
-            <div>
-                <label>J'ai lu et approuvé les <a href="#"> CGV</a> ...*</label>
-                <input type="checkbox" name="CGV" id="CGV" required>
-            </div>
-            <button type="button" name="inscription">
-                <i class="fas fa-check"></i>
-                Inscription
-            </button>
-        </form>
+        <div class="l-main-form"> 
+            <h1>Inscription</h1>
+            <form action="post.php" method="post">
+                <div class="l-main-form-block">
+                    <label>Email*</label>
+                    <input type="text" name="Email" id="Email" required>
+                </div>
+                <div class="l-main-form-block">
+                    <label>Mot de passe*</label>
+                    <input type="password" name="Password" id="Password" required>
+                </div>
+                <div class="l-main-form-block">
+                    <label>Mot de Passe*</label>
+                    <input type="password" name="PasswordConfirm" id="PasswordConfirm" required>
+                </div class="l-main-form-block">
+                <div class="l-main-form-block">
+                    <label>Prénom*</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+                <div class="l-main-form-block">
+                    <label>Nom*</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+                <div class="l-main-form-block">
+                    <label>Date de naissance*</label>
+                    <input type="date" name="birthDate" id="birthDate" required>
+                </div>
+                <div class="l-main-form-check">
+                    <input type="checkbox" name="CGV" id="CGV" required>
+                    <label>J'ai lu et approuvé les <a href="#"> CGV</a> ...*</label>
+                </div>
+                <button type="button" name="inscription" class="l-main-form-button">
+                    <i class="fas fa-check"></i>
+                    Inscription
+                </button>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="l-footer">
             <p>
-                Inforshop.store & site with <i class="fas fa-heart"></i> by <a href="https://github.com/RRINKIN">RAF</a>
+                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href="https://github.com/RRINKIN">RAF</a>
             </p>
         </div>
     </footer>

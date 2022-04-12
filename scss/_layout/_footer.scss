@@ -1,0 +1,16 @@
+footer {
+    background-size: cover;
+    max-width: map-get($screenSize, smartphoneMaxScreenSize);
+    background: map-get($colors, gradient);
+    padding-bottom: 1rem;
+}
+
+.l-footer p {
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.fa-heart {
+    color: map-get($colors, textOnLight)
+}

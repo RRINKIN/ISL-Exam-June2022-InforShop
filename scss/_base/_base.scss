@@ -9,3 +9,8 @@ body {
     background-color: map-get($colors, backgroundLightMain);
     margin: 0px auto;
 }
+
+h1 {
+    font-size: map-get($fontSize, h1);
+    color: map-get($colors, textOnDark);
+}
