@@ -9,8 +9,5 @@ footer {
     font-size: 0.7rem;
     text-align: center;
     padding-top: 1.5rem;
-}
-
-.fa-heart {
-    color: map-get($colors, textOnLight)
+    color: map-get($colors, textOnLight);
 }

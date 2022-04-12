@@ -15,6 +15,10 @@ h1 {
   color: #263585;
 }
 
+.fas {
+  color: white;
+}
+
 header {
   background-size: cover;
   max-width: 330px;
@@ -104,20 +108,48 @@ header {
   display: none;
 }
 
-.l-nav-icons i, p {
+.l-nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-nav-icons-account, .l-nav-icons-cart {
   color: white;
   font-size: 1.5rem;
+  margin: 1rem 0 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .l-nav-icons p {
   font-size: 0.7rem;
+  margin: 0;
 }
 
 .l-nav-search {
   background-color: white;
-  margin: 0 1rem;
+  margin: 1rem 1rem 0 1rem;
   height: 1.5rem;
   padding-top: 0.4rem;
+}
+
+.fa-search {
+  color: #918e8e;
 }
 
 .l-nav-search-wrapper {
@@ -153,9 +185,6 @@ footer {
   font-size: 0.7rem;
   text-align: center;
   padding-top: 1.5rem;
-}
-
-.fa-heart {
   color: white;
 }
 
@@ -189,6 +218,10 @@ footer {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.fa-home {
+  color: #918e8e;
 }
 
 .l-main-ariane-block p {

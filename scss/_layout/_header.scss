@@ -62,21 +62,36 @@ header {
 }
 
 // account icons
-.l-nav-icons i,p {
+.l-nav-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.l-nav-icons-account, .l-nav-icons-cart {
     color: map-get($colors, textOnLight);
     font-size: 1.5rem;
+    margin: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .l-nav-icons p {
     font-size: 0.7rem;
+    margin: 0;
 }
 
-// nav
+// search
 .l-nav-search {
     background-color: map-get($colors, backgroundLightSecondary);
-    margin: 0 1rem;
+    margin: 1rem 1rem 0 1rem;
     height: 1.5rem;
     padding-top: 0.4rem;
+}
+
+.fa-search {
+    color: map-get($colors, textOnMedium);
 }
 
 .l-nav-search-wrapper {

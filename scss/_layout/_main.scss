@@ -17,6 +17,10 @@
     align-content: center;
 }
 
+.fa-home {
+    color: map-get($colors, textOnMedium);
+}
+
 .l-main-ariane-block p {
     color: map-get($colors, textOnMedium);
     font-size: 1rem;

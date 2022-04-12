@@ -14,3 +14,7 @@ h1 {
     font-size: map-get($fontSize, h1);
     color: map-get($colors, textOnDark);
 }
+
+.fas {
+    color: map-get($colors, textOnLight);
+}
