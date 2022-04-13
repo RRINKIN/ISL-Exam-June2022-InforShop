@@ -63,19 +63,3 @@
     justify-content: flex-start;
     margin: 1rem;
 }
-
-.l-main-form-button {
-    margin: 1rem;
-    border: none;
-    height: 2rem;
-    border-radius: 0.3rem;
-    background-color: map-get($colors, textOnMedium);
-    color: map-get($colors, textOnLight);
-    font-size: 0.7rem;
-    padding: 0 1rem;
-}
-
-.fa-check {
-    color: map-get($colors, textOnLight);
-    margin: 0 1rem 0 0;
-}

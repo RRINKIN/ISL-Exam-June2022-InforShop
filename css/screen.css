@@ -271,22 +271,6 @@ footer {
   margin: 1rem;
 }
 
-.l-main-form-button {
-  margin: 1rem;
-  border: none;
-  height: 2rem;
-  border-radius: 0.3rem;
-  background-color: #918e8e;
-  color: white;
-  font-size: 0.7rem;
-  padding: 0 1rem;
-}
-
-.fa-check {
-  color: white;
-  margin: 0 1rem 0 0;
-}
-
 .l-nav-tree-closing {
   text-align: end;
   font-size: 2rem;
@@ -331,5 +315,41 @@ footer {
 
 .l-nav-tree.is-active {
   left: 0vw;
+}
+
+.m-main-form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.m-main-form-button, .m-main-form-buttonSecondary, .m-main-form-buttonThirdary {
+  margin: 1rem;
+  border: none;
+  height: 2rem;
+  border-radius: 0.3rem;
+  background-color: #918e8e;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 1rem;
+}
+
+.fa-check {
+  color: white;
+  margin: 0 1rem 0 0;
+}
+
+.m-main-form-buttonSecondary {
+  background-color: #263585;
+}
+
+.m-main-form-buttonThirdary {
+  background-color: white;
+  color: #918e8e;
+  border: solid grey 1px;
 }
 /*# sourceMappingURL=screen.css.map */

@@ -1,0 +1,33 @@
+// button Primary
+.m-main-form-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.m-main-form-button, .m-main-form-buttonSecondary, .m-main-form-buttonThirdary {
+    margin: 1rem;
+    border: none;
+    height: 2rem;
+    border-radius: 0.3rem;
+    background-color: map-get($colors, textOnMedium);
+    color: map-get($colors, textOnLight);
+    font-size: 0.7rem;
+    padding: 0 1rem;
+}
+
+.fa-check {
+    color: map-get($colors, textOnLight);
+    margin: 0 1rem 0 0;
+}
+
+// button Secondary
+.m-main-form-buttonSecondary {
+    background-color: map-get($colors, backgroundDarkMain);
+}
+
+// button Thirdary
+.m-main-form-buttonThirdary {
+    background-color: map-get($colors, backgroundLightSecondary);
+    color: map-get($colors, textOnMedium);
+    border: solid grey 1px;
+}
