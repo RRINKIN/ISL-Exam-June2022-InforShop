@@ -1,0 +1,49 @@
+// Menu used for the mobile version of the website 
+
+//closing cross
+.l-nav-tree-closing {
+    text-align: end;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.fa-times:hover {
+    color: map-get($colors, decoration);
+}
+
+// menu contain
+.l-nav-tree {
+    position: fixed;
+    left: -150vw;
+    top: 0;
+    transition-duration: 1s;
+    width: 100vw;
+    height: 100vh;
+    background: map-get($colors, gradient);
+}
+  
+.l-nav-tree li {
+    list-style: none;
+}
+
+.l-nav-tree ul {
+    padding: 4rem 0;
+}
+  
+.l-nav-tree a {
+    color: map-get($colors, textOnLight);
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.l-nav-tree a:hover {
+    color: map-get($colors, decoration);
+}
+  
+.l-nav-tree.is-active {
+    left: 0vw;
+}
+  

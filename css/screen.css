@@ -83,6 +83,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .l-nav-burger {
@@ -104,8 +105,8 @@ header {
   font-size: 1.5rem;
 }
 
-.l-nav-menu ul {
-  display: none;
+.fa-bars:hover {
+  color: white;
 }
 
 .l-nav-icons {
@@ -284,5 +285,51 @@ footer {
 .fa-check {
   color: white;
   margin: 0 1rem 0 0;
+}
+
+.l-nav-tree-closing {
+  text-align: end;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.fa-times:hover {
+  color: #e37823;
+}
+
+.l-nav-tree {
+  position: fixed;
+  left: -150vw;
+  top: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #216eb8, #263585);
+}
+
+.l-nav-tree li {
+  list-style: none;
+}
+
+.l-nav-tree ul {
+  padding: 4rem 0;
+}
+
+.l-nav-tree a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.l-nav-tree a:hover {
+  color: #e37823;
+}
+
+.l-nav-tree.is-active {
+  left: 0vw;
 }
 /*# sourceMappingURL=screen.css.map */
