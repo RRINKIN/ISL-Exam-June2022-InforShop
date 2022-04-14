@@ -40,37 +40,63 @@ header {
     width: 3.5rem;
     border-radius: 0 0 0 45%;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     cursor: pointer;
+
+    .trigger:checked ~ & span:first-child {
+        transform: rotate(45deg);
+        top: 8px;
+        position: relative;
+    }
+
+    .trigger:checked ~ & span:last-child {
+        transform: rotate(-45deg);
+        top: -8px;
+        position: relative;
+    }
+    
+    .trigger:checked ~ & span:nth-child(2) {
+        opacity: 0;
+        position: relative;
+    }
 }
 
 .l-nav-burger {
     height: 3rem;
     width: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+
+    span {
+        height: 3px;
+        width: 1.5rem;
+        margin: 0.15rem;
+        background: map-get($colors, decoration);
+    }
+
+    span:hover {
+        background: map-get($colors, backgroundLightSecondary);
+    }
 }
 
-.fa-bars {
-    color: map-get($colors, decoration);
-    font-size: 1.5rem;
-}
-
-.fa-bars:hover {
-    color: map-get($colors, backgroundLightSecondary);
+.trigger {
+    display: none;
   }
-
-.l-nav-menu ul {
-    //display: none;
-}
 
 // account icons
 .l-nav-icons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    p {
+        font-size: 0.7rem;
+        margin: 0;
+    }
 }
 
 .l-nav-icons-account, .l-nav-icons-cart {
@@ -80,11 +106,6 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.l-nav-icons p {
-    font-size: 0.7rem;
-    margin: 0;
 }
 
 // search

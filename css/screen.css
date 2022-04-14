@@ -86,27 +86,57 @@ header {
   cursor: pointer;
 }
 
+.trigger:checked ~ .l-nav-menu-wrapper span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 8px;
+  position: relative;
+}
+
+.trigger:checked ~ .l-nav-menu-wrapper span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -8px;
+  position: relative;
+}
+
+.trigger:checked ~ .l-nav-menu-wrapper span:nth-child(2) {
+  opacity: 0;
+  position: relative;
+}
+
 .l-nav-burger {
   height: 3rem;
   width: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
-.fa-bars {
-  color: #e37823;
-  font-size: 1.5rem;
+.l-nav-burger span {
+  height: 3px;
+  width: 1.5rem;
+  margin: 0.15rem;
+  background: #e37823;
 }
 
-.fa-bars:hover {
-  color: white;
+.l-nav-burger span:hover {
+  background: white;
+}
+
+.trigger {
+  display: none;
 }
 
 .l-nav-icons {
@@ -119,6 +149,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.l-nav-icons p {
+  font-size: 0.7rem;
+  margin: 0;
 }
 
 .l-nav-icons-account, .l-nav-icons-cart {
@@ -135,11 +170,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.l-nav-icons p {
-  font-size: 0.7rem;
-  margin: 0;
 }
 
 .l-nav-search {
@@ -271,18 +301,8 @@ footer {
   margin: 1rem;
 }
 
-.l-nav-tree-closing {
-  text-align: end;
-  font-size: 2rem;
-  margin: 2rem;
-}
-
-.fa-times:hover {
-  color: #e37823;
-}
-
 .l-nav-tree {
-  position: fixed;
+  position: absolute;
   left: -150vw;
   top: 0;
   -webkit-transition-duration: 1s;
@@ -290,6 +310,10 @@ footer {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(45deg, #216eb8, #263585);
+}
+
+.trigger:checked ~ .l-nav-tree {
+  left: 0;
 }
 
 .l-nav-tree li {
@@ -311,10 +335,6 @@ footer {
 
 .l-nav-tree a:hover {
   color: #e37823;
-}
-
-.l-nav-tree.is-active {
-  left: 0vw;
 }
 
 .m-main-form-buttons {
