@@ -10,9 +10,14 @@ body {
     margin: 0px auto;
 }
 
-h1 {
+h1, h2 {
     font-size: map-get($fontSize, h1);
-    color: map-get($colors, textOnDark);
+    color: map-get($colors, backgroundDarkSecondary);
+}
+
+h3 {
+    font-size: map-get($fontSize, h3);
+    color: map-get($colors, backgroundDarkSecondary);
 }
 
 .fas {

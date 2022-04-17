@@ -27,39 +27,69 @@
     margin: auto;
 }
 
-.l-main-ariane-sign p {
+.l-main-ariane-sign span {
     color: map-get($colors, decoration);
     font-size: 1rem;
     margin: 0 1rem;
 }
 
 // registration form
-.l-main-form {
+.l-main-form, .l-main-block {
     background-color: map-get($colors, backgroundLightSecondary);
     margin: 1rem;
-    color: map-get($colors, textOnDark);
+    color: map-get($colors, backgroundDarkSecondary);
+
+    h1 {
+        padding: 1rem;
+    }
 }
 
-.l-main-form h1 {
-    padding: 1rem;
-    color: map-get($colors, textOnDark);
+.l-main-form-block {
+    label {
+        display: block;
+        padding: 0 1rem;
+    }
+
+    input {
+        border: 0;
+        border-bottom: 1px solid #263585;
+        width: 90%;
+        padding: 0;
+        margin: 0 1rem 1rem 1rem;
+        color: map-get($colors, textOnMedium);
+    }
+
+    i {
+        width: 1rem;
+        height: 1rem;
+        color: map-get($colors, backgroundDarkSecondary);
+        padding: 0;
+        margin: 0 0 0 1rem;
+    }
 }
 
-.l-main-form-block label {
-    display: block;
-    padding: 0 1rem;
-}
-
-.l-main-form-block input {
-    border: 0;
-    border-bottom: 1px solid #263585;
-    width: 90%;
-    padding: 0;
-    margin: 0 1rem 1rem 1rem;
+.l-main-form-block-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .l-main-form-check {
     display: flex;
     justify-content: flex-start;
     margin: 1rem;
+}
+
+// Contact block
+.l-main-block {
+    padding: 1rem;
+
+    p {
+        color: map-get($colors, textOnMedium);
+        font-size: map-get($fontSize, h3);
+    }
+
+    em {
+        font-weight: bold;
+    }
 }

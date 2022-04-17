@@ -10,9 +10,14 @@ body {
   margin: 0px auto;
 }
 
-h1 {
+h1, h2 {
   font-size: 1rem;
-  color: #263585;
+  color: #216eb8;
+}
+
+h3 {
+  font-size: 0.9rem;
+  color: #216eb8;
 }
 
 .fas {
@@ -124,15 +129,15 @@ header {
   z-index: 10;
 }
 
+.l-nav-burger :hover {
+  background: white;
+}
+
 .l-nav-burger span {
   height: 3px;
   width: 1.5rem;
   margin: 0.15rem;
   background: #e37823;
-}
-
-.l-nav-burger span:hover {
-  background: white;
 }
 
 .trigger {
@@ -261,21 +266,20 @@ footer {
   margin: auto;
 }
 
-.l-main-ariane-sign p {
+.l-main-ariane-sign span {
   color: #e37823;
   font-size: 1rem;
   margin: 0 1rem;
 }
 
-.l-main-form {
+.l-main-form, .l-main-block {
   background-color: white;
   margin: 1rem;
-  color: #263585;
+  color: #216eb8;
 }
 
-.l-main-form h1 {
+.l-main-form h1, .l-main-block h1 {
   padding: 1rem;
-  color: #263585;
 }
 
 .l-main-form-block label {
@@ -289,6 +293,28 @@ footer {
   width: 90%;
   padding: 0;
   margin: 0 1rem 1rem 1rem;
+  color: #918e8e;
+}
+
+.l-main-form-block i {
+  width: 1rem;
+  height: 1rem;
+  color: #216eb8;
+  padding: 0;
+  margin: 0 0 0 1rem;
+}
+
+.l-main-form-block-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .l-main-form-check {
@@ -299,6 +325,19 @@ footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 1rem;
+}
+
+.l-main-block {
+  padding: 1rem;
+}
+
+.l-main-block p {
+  color: #918e8e;
+  font-size: 0.9rem;
+}
+
+.l-main-block em {
+  font-weight: bold;
 }
 
 .l-nav-tree {
@@ -353,6 +392,17 @@ footer {
   height: 2rem;
   border-radius: 0.3rem;
   background-color: #918e8e;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 1rem;
+}
+
+.m-main-form-button-send {
+  margin: 1rem;
+  border: none;
+  height: 2rem;
+  border-radius: 0.3rem;
+  background-color: #216eb8;
   color: white;
   font-size: 0.7rem;
   padding: 0 1rem;
