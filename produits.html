@@ -10,25 +10,120 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="l-nav-menu">
-                <ul>
-                    <li><a href="index.html">Acceuil</a></li>
-                    <li><a href="produits.html">Produits</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>                
+        <nav class="l-nav">
+            <div class="l-nav-top">
+                <div class="l-nav-logo-wrapper">
+                    <div class="l-nav-logo">
+                    </div>
+                </div>
+                <div class="l-nav-menu">
+                    <label for="trigger">
+                    <input type="checkbox" class="trigger" id="trigger" />
+                    <div class="l-nav-menu-wrapper">
+                        <div class="l-nav-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <nav class="l-nav-tree">
+                        <ul> 
+                            <li><a href="index.html">Acceuil</a></li>
+                            <li><a href="produits.html">Produits</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>       
+                </div>
             </div>
-            <div>
+            <div class="l-nav-icons">
+                <div class="l-nav-icons-account">
+                    <i class="fas fa-user"></i>
+                    <p>Compte</p>
+                </div>
+                <div class="l-nav-icons-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Panier</p>
+                </div>
             </div>
-        </nav>
-        
-
-        </div>
+            <div class="l-nav-search">
+                <form action="post.php">
+                    <div class="l-nav-search-wrapper">
+                        <input type="text" name="Search" id="Search" value="Chercher un produit ...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+            </div>
+        </nav> 
     </header>
     <main>
-        produits
+        <div class="l-main-ariane">
+            <div class="l-main-ariane-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="l-main-ariane-sign">
+                <span>></span>
+            </div>
+            <div class="l-main-ariane-block">
+                <p>PC de Bureau</p>
+            </div>
+        </div>
+        <h1>PC de Bureau</h1>
+        <div class="l-main-form"> 
+            <h2>Filter</h2>
+            <form action="post.php" method="post">
+                <h3>Marques</h3>
+                <div class="l-main-form-check">
+                    <input type="checkbox" name="Razer" id="Razer">
+                    <label>Razer</label>
+                </div>
+                <div class="l-main-form-check">
+                    <input type="checkbox" name="Logitech" id="Logitech">
+                    <label>Logitech</label>
+                </div>
+                <div class="l-main-form-check">
+                    <input type="checkbox" name="HP" id="HP">
+                    <label>HP</label>
+                </div>
+                <h3>Prix</h3>
+                <div class="l-main-form-block">
+                    <label>Min value:</label>
+                    <input type="number" name="Number" id="Number" min="0" max="250" >
+                </div>
+                <div class="l-main-form-block">
+                    <label>Max value:</label>
+                    <input type="number" name="Number" id="Number" min="0" max="250" >
+                </div>
+                <div class="l-main-form-range">
+                    <span>0</span>
+                    <span>250</span>
+                    <input type="range" min="0" max="250" value="200" step="10">
+                  </div>
+                <h3>Disponibilité</h3>
+                <div class="l-main-form-check">
+                    <input type="checkbox" name="En-Stock" id="En-Stock">
+                    <label>En stock</label>
+                </div>
+            </form>
+        </div>
+        <div class="l-main-pageIndex">
+                <span class="l-main-pageIndex-isActive">1</span>
+                <span>2</span>
+                <span>3</span>
+        </div>
+        <div class="l-main-productFiche">
+            <img src="./images/HP_Pavillong_Gaming.avif" alt="HP_Pavillon_Gaming">
+            <h4>HP Pavillon Gaming</h4>
+            <p>PC parfait pour le gaming</p>
+            <p>15 en stock</p>
+            <p>1750€</p>
+        </div>
     </main>
     <footer>
+        <div class="l-footer">
+            <p>
+                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href="https://github.com/RRINKIN">RAF</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>

@@ -7,6 +7,7 @@
     width: 100vw;
     height: 100vh;
     background: map-get($colors, gradient);
+    z-index: 1;
 
     .trigger:checked ~ & {
         left: 0;

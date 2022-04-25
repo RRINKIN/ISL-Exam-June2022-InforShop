@@ -48,17 +48,23 @@ header {
         transform: rotate(45deg);
         top: 8px;
         position: relative;
+        transition: 1s;
     }
 
     .trigger:checked ~ & span:last-child {
         transform: rotate(-45deg);
         top: -8px;
         position: relative;
+        transition: 1s;
     }
     
     .trigger:checked ~ & span:nth-child(2) {
         opacity: 0;
         position: relative;
+    }
+
+    :hover ~ & span {
+        background: map-get($colors, backgroundLightSecondary);
     }
 }
 
@@ -70,10 +76,6 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 10;
-
-    :hover {
-        background: map-get($colors, backgroundLightSecondary);
-    }
 
     span {
         height: 3px;
@@ -106,6 +108,22 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.l-nav-icons-cart {
+    position: relative;
+}
+
+.l-nav-icons-cart::before {
+    content: "0";
+    height: 1.25rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: map-get($colors, decoration);
+    font-size: 1rem;
+    position: absolute;
+    top: -0.5rem;
+    padding: 0 0 0  0.3rem;
 }
 
 // search

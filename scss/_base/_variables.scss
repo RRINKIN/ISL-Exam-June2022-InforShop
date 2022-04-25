@@ -1,10 +1,12 @@
 $font-main : calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif ;
+
 $fontSize: (
     textMain: 16px,
     h1: 1rem, 
     h2: 1rem,
     h3: 0.9rem,
 );
+
 $colors: (
     backgroundDarkMain: #263585,
     backgroundDarkSecondary: #216eb8,
@@ -16,11 +18,19 @@ $colors: (
     textOnMedium: rgb(145, 142, 142),
     gradient: linear-gradient(45deg, #216eb8, #263585),
 );
+
 $screenSize: (
     smartphoneMinScreenSize: 1px,
     tabletMinScreenSize: 331px,
-    laptopMinScreenSize: 661px,
+    laptopMinScreenSize: 721px,
     smartphoneMaxScreenSize: 330px,
-    tabletMaxScreenSize: 660px,
+    tabletMaxScreenSize: 720px,
     laptopMaxScreenSize: 1100px,
 );
+
+@mixin flex-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

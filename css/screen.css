@@ -96,6 +96,8 @@ header {
           transform: rotate(45deg);
   top: 8px;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .trigger:checked ~ .l-nav-menu-wrapper span:last-child {
@@ -103,11 +105,17 @@ header {
           transform: rotate(-45deg);
   top: -8px;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .trigger:checked ~ .l-nav-menu-wrapper span:nth-child(2) {
   opacity: 0;
   position: relative;
+}
+
+:hover ~ .l-nav-menu-wrapper span {
+  background: white;
 }
 
 .l-nav-burger {
@@ -127,10 +135,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10;
-}
-
-.l-nav-burger :hover {
-  background: white;
 }
 
 .l-nav-burger span {
@@ -175,6 +179,22 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.l-nav-icons-cart {
+  position: relative;
+}
+
+.l-nav-icons-cart::before {
+  content: "0";
+  height: 1.25rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #e37823;
+  font-size: 1rem;
+  position: absolute;
+  top: -0.5rem;
+  padding: 0 0 0  0.3rem;
 }
 
 .l-nav-search {
@@ -272,6 +292,25 @@ footer {
   margin: 0 1rem;
 }
 
+.l-main-pageIndex {
+  padding: 1rem;
+}
+
+.l-main-pageIndex span {
+  background-color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.1rem 0.4rem;
+  margin: 0.1rem;
+  border: solid 1px #216eb8;
+  color: #216eb8;
+}
+
+.l-main-pageIndex .l-main-pageIndex-isActive {
+  border: solid 1px #e37823;
+  color: #e37823;
+}
+
 .l-main-form, .l-main-block {
   background-color: white;
   margin: 1rem;
@@ -327,6 +366,30 @@ footer {
   margin: 1rem;
 }
 
+.l-main-form-range {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.l-main-form-range input {
+  width: 100%;
+}
+
+.l-main-productFiche img {
+  width: 100%;
+}
+
 .l-main-block {
   padding: 1rem;
 }
@@ -349,6 +412,7 @@ footer {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(45deg, #216eb8, #263585);
+  z-index: 1;
 }
 
 .trigger:checked ~ .l-nav-tree {
