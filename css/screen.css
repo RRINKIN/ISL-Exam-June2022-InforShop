@@ -386,8 +386,38 @@ footer {
   width: 100%;
 }
 
+.l-main-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.l-main-productFiche {
+  background-color: white;
+  margin: 1rem;
+  color: #216eb8;
+}
+
 .l-main-productFiche img {
   width: 100%;
+}
+
+.l-main-productFiche-features {
+  padding: 0 1rem;
+}
+
+.l-main-productFiche-price {
+  color: #e37823;
+  font-weight: bold;
 }
 
 .l-main-block {
