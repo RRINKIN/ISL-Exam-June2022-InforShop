@@ -26,6 +26,17 @@
     padding: 0 1rem;
 }
 
+.m-main-product-button {
+    margin: 1rem;
+    border: none;
+    height: 2rem;
+    border-radius: 0.3rem;
+    background-color: map-get($colors, backgroundDarkMain);
+    color: map-get($colors, textOnLight);
+    font-size: 0.7rem;
+    padding: 0 1rem;
+}
+
 .fa-check {
     color: map-get($colors, textOnLight);
     margin: 0 1rem 0 0;
@@ -42,3 +53,4 @@
     color: map-get($colors, textOnMedium);
     border: solid grey 1px;
 }
+

@@ -117,13 +117,14 @@ header {
 .l-nav-icons-cart::before {
     content: "0";
     height: 1.25rem;
-    width: 1rem;
+    width: 0.8rem;
     border-radius: 50%;
     background-color: map-get($colors, decoration);
     font-size: 1rem;
     position: absolute;
-    top: -0.5rem;
-    padding: 0 0 0  0.3rem;
+    top: -0.7rem;
+    left: 1rem;
+    padding: 0 0 0 0.3rem;
 }
 
 // search

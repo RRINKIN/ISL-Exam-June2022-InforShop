@@ -188,13 +188,14 @@ header {
 .l-nav-icons-cart::before {
   content: "0";
   height: 1.25rem;
-  width: 1rem;
+  width: 0.8rem;
   border-radius: 50%;
   background-color: #e37823;
   font-size: 1rem;
   position: absolute;
-  top: -0.5rem;
-  padding: 0 0 0  0.3rem;
+  top: -0.7rem;
+  left: 1rem;
+  padding: 0 0 0 0.3rem;
 }
 
 .l-nav-search {
@@ -314,6 +315,7 @@ footer {
 .l-main-form, .l-main-block {
   background-color: white;
   margin: 1rem;
+  padding: 1rem 0 1rem 1rem;
   color: #216eb8;
 }
 
@@ -323,15 +325,14 @@ footer {
 
 .l-main-form-block label {
   display: block;
-  padding: 0 1rem;
 }
 
 .l-main-form-block input {
   border: 0;
   border-bottom: 1px solid #263585;
-  width: 90%;
+  width: 95%;
   padding: 0;
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 0 1rem 0;
   color: #918e8e;
 }
 
@@ -363,11 +364,14 @@ footer {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 1rem;
+}
+
+.l-main-form-check label {
+  color: #918e8e;
 }
 
 .l-main-form-range {
-  margin: 1rem;
+  margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,7 +419,31 @@ footer {
   padding: 0 1rem;
 }
 
-.l-main-productFiche-price {
+.l-main-productFiche-features h4 {
+  margin: 0;
+}
+
+.l-main-productFiche-features p {
+  color: #918e8e;
+}
+
+.l-main-product-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-product-price span {
   color: #e37823;
   font-weight: bold;
 }
@@ -497,6 +525,17 @@ footer {
   height: 2rem;
   border-radius: 0.3rem;
   background-color: #216eb8;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 1rem;
+}
+
+.m-main-product-button {
+  margin: 1rem;
+  border: none;
+  height: 2rem;
+  border-radius: 0.3rem;
+  background-color: #263585;
   color: white;
   font-size: 0.7rem;
   padding: 0 1rem;

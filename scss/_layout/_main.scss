@@ -57,6 +57,7 @@
 .l-main-form, .l-main-block {
     background-color: map-get($colors, backgroundLightSecondary);
     margin: 1rem;
+    padding: 1rem 0 1rem 1rem;
     color: map-get($colors, backgroundDarkSecondary);
 
     h1 {
@@ -67,15 +68,14 @@
 .l-main-form-block {
     label {
         display: block;
-        padding: 0 1rem;
     }
 
     input {
         border: 0;
         border-bottom: 1px solid #263585;
-        width: 90%;
+        width: 95%;
         padding: 0;
-        margin: 0 1rem 1rem 1rem;
+        margin: 0 0 1rem 0;
         color: map-get($colors, textOnMedium);
     }
 
@@ -97,11 +97,14 @@
 .l-main-form-check {
     display: flex;
     justify-content: flex-start;
-    margin: 1rem;
+
+    label {
+        color: map-get($colors, textOnMedium);
+    }
 }
 
 .l-main-form-range {
-    margin: 1rem;
+    margin-right: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -132,11 +135,26 @@
 
 .l-main-productFiche-features{
     padding: 0 1rem;
+
+    h4 {
+        margin: 0;
+    }
+
+    p {
+        color: map-get($colors, textOnMedium);
+    }
 }
 
-.l-main-productFiche-price {
-    color: map-get($colors, decoration);
-    font-weight: bold;
+.l-main-product-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        color: map-get($colors, decoration);
+        font-weight: bold;
+    }
 }
 
 // Contact block
