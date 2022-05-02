@@ -312,6 +312,10 @@ footer {
   color: #e37823;
 }
 
+h1 {
+  padding: 0 1rem;
+}
+
 .l-main-form, .l-main-block {
   background-color: white;
   margin: 1rem;
@@ -319,8 +323,18 @@ footer {
   color: #216eb8;
 }
 
-.l-main-form h1, .l-main-block h1 {
-  padding: 1rem;
+.l-main-form-date {
+  margin: 2rem 1rem;
+  font-size: 0.9rem;
+  text-align: end;
+}
+
+.l-main-form-date p {
+  color: #918e8e;
+}
+
+.l-main-form-date time {
+  color: #216eb8;
 }
 
 .l-main-form-block label {
@@ -329,9 +343,8 @@ footer {
 
 .l-main-form-block input {
   border: 0;
-  border-bottom: 1px solid #263585;
-  width: 95%;
-  padding: 0;
+  width: 85%;
+  padding: 0 1rem;
   margin: 0 0 1rem 0;
   color: #918e8e;
 }
@@ -342,6 +355,14 @@ footer {
   color: #216eb8;
   padding: 0;
   margin: 0 0 0 1rem;
+}
+
+.l-main-form-block .fa-trash {
+  border: 1px solid black;
+  border-radius: 15%;
+  padding: 0.2rem;
+  background-color: whitesmoke;
+  color: #3a3939;
 }
 
 .l-main-form-block-icon {
@@ -461,6 +482,43 @@ footer {
   font-weight: bold;
 }
 
+.l-main-form-totalPrice {
+  text-align: end;
+  padding: 0 1rem;
+}
+
+.l-main-form-totalPrice .l-main-form-totalPrice-label {
+  color: #918e8e;
+  position: relative;
+}
+
+.l-main-form-totalPrice ::before {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #918e8e;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0rem;
+}
+
+.l-main-form-totalPrice .l-main-form-totalPrice-amount {
+  font-weight: bold;
+  position: relative;
+}
+
+.l-main-form-totalPrice ::before {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: whitesmoke;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0rem;
+}
+
 .l-nav-tree {
   position: absolute;
   left: -150vw;
@@ -554,5 +612,17 @@ footer {
   background-color: white;
   color: #918e8e;
   border: solid grey 1px;
+}
+
+.m-main-form-button-sendOrder {
+  margin: 0 0 0 auto;
+  border: none;
+  height: 2rem;
+  width: 11rem;
+  border-radius: 0.3rem;
+  background-color: #263585;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 1rem;
 }
 /*# sourceMappingURL=screen.css.map */

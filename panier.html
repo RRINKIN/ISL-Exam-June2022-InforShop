@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/screen.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <title>InforShop Contact</title>
+    <title>InforShop Panier</title>
 </head>
 <body>
     <header>
@@ -56,62 +56,56 @@
         </nav> 
     </header>
     <main>
-        </div>
-        <div class="l-main-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.1418605723875!2d5.558292615766021!3d50.643056479502384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa164d5c4969%3A0xd379a00de93c696!2sRue%20St%20Laurent%2033%2C%204000%20Li%C3%A8ge!5e0!3m2!1sen!2sbe!4v1650224864286!5m2!1sen!2sbe" width="330" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="l-main-ariane">
+            <div class="l-main-ariane-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="l-main-ariane-sign">
+                <span>></span>
+            </div>
+            <div class="l-main-ariane-block">
+                <p>Mon panier</p>
+            </div>
         </div>
         <div class="l-main-form"> 
-            <h1>Contact US</h1>
+            <h1>Mon panier</h1>
+            <div class="l-main-form-date">
+                <p>Dernière mise à jour: <time datetime="2022-03-27T20:25:08">27/03/2022, 20:25:08</time></p>
+            </div>
             <form action="post.php" method="post">
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-user"></i>
-                        <label>Votre prénom & nom*</label>
-                    </div>
-                    <input type="text" name="Name" id="Name" value="Votre prénom & nom" required>
+                    <input type="text" name="selectedProduct" id="selectedProduct" value="Clavier Logitech K860">
                 </div>
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-envelope"></i>
-                        <label>Email*</label>
-                    </div>
-                    <input type="text" name="Email" id="Email" value="Votre e-mail (pour vous répondre)" required>
+                    <input type="number" name="selectedQuantity" id="selectedQuantity">
                 </div>
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-phone"></i>
-                        <label>Votre téléphone*</label>
-                    </div>
-                    <input type="text" name="Phone" id="Phone" value="Votre téléphone" required>
+                    <input type="text" name="selectedUniquePrice" id="selectedUniquePrice" value="100€">
                 </div>
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-comment"></i>
-                        <label>De quoi souhaitez-vous parler?*</label>
-                    </div>
-                    <input type="text" name="Message" id="Message" value="De quoi souhaitez-vous parler?" required>
+                    <input type="text" name="selectedUniqueTVA" id="selectedUniqueTVA" value="21">
                 </div>
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-comment"></i>
-                        <label>Expliquez-moi en détail...*</label>
-                    </div>
-                    <input type="text" name="Details" id="Details" value="Expliquez-moi en détail..." required>
+                    <input type="text" name="selectedTotalPrice" id="selectedTotalPrice" value="100€">
                 </div>
-                <button type="button" name="envoyer" class="m-main-form-button-send">
-                    <a href="mailto:info@inforShop.be">Envoyer</a>
-                </button>
+                <div class="l-main-form-block">
+                    <i class="fas fa-trash"></i>
+                </div>
+                <div class="l-main-form-totalPrice">
+                    <p class="l-main-form-totalPrice-label">Total HTVA</p>
+                    <p class="l-main-form-totalPrice-amount">100€</p>
+                    <p class="l-main-form-totalPrice-label">Total TVA</p>
+                    <p class="l-main-form-totalPrice-amount">21€</p>
+                    <p class="l-main-form-totalPrice-label">Total TVAC</p>
+                    <p class="l-main-form-totalPrice-amount">121€</p>
+                </div>
+                <div class="m-main-form-buttons">
+                    <button type="button" name="inscription" class="m-main-form-button-sendOrder">
+                        <i class="fas fa-check"></i>
+                        Passez la commande
+                    </button>
+                </div>
             </form>
-        </div>
-        <div class="l-main-block">
-            <h2>Informations de contact</h2>
-            <p><strong>Inforshop SRL</strong></p>
-            <h3>Adresse</h3>
-            <p>Rue Saint-Laurent 33 <br> 4000 Liège</p>
-            <h3>Téléphone</h3>
-            <p>+32(0)4 365 21 45</p>
-            <h3>Horaire</h3>
-            <p><strong>Notre équipe se tient à votre disposition du lundi au vendredi:</strong> <br>De: 9h00 à 18h00</p>
         </div>
     </main>
     <footer>

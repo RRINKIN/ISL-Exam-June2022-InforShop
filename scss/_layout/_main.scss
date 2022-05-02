@@ -54,14 +54,28 @@
 }
 
 // registration form
+h1 {
+    padding: 0 1rem;
+}
+
 .l-main-form, .l-main-block {
     background-color: map-get($colors, backgroundLightSecondary);
     margin: 1rem;
     padding: 1rem 0 1rem 1rem;
     color: map-get($colors, backgroundDarkSecondary);
+}
 
-    h1 {
-        padding: 1rem;
+.l-main-form-date {
+    margin: 2rem 1rem;
+    font-size: 0.9rem;
+    text-align: end;
+
+    p {
+        color: map-get($colors, textOnMedium);        
+    }
+
+    time {
+        color: map-get($colors, backgroundDarkSecondary);
     }
 }
 
@@ -72,9 +86,8 @@
 
     input {
         border: 0;
-        border-bottom: 1px solid #263585;
-        width: 95%;
-        padding: 0;
+        width: 85%;
+        padding: 0 1rem;
         margin: 0 0 1rem 0;
         color: map-get($colors, textOnMedium);
     }
@@ -85,6 +98,14 @@
         color: map-get($colors, backgroundDarkSecondary);
         padding: 0;
         margin: 0 0 0 1rem;
+    }
+
+    .fa-trash{
+        border: 1px solid black;
+        border-radius: 15%;
+        padding: 0.2rem;
+        background-color: map-get($colors, backgroundLightMain);
+        color: map-get($colors, textOnVeryLight);
     }
 }
 
@@ -168,5 +189,43 @@
 
     em {
         font-weight: bold;
+    }
+}
+
+// Panier
+.l-main-form-totalPrice {
+    text-align: end;
+    padding: 0 1rem;
+
+    .l-main-form-totalPrice-label{
+        color: map-get($colors, textOnMedium);
+        position: relative;
+    }
+
+    ::before {
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background: map-get($colors, textOnMedium);
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0rem;
+    }   
+
+    .l-main-form-totalPrice-amount{
+        font-weight: bold;
+        position: relative;
+    }
+
+    ::before {
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background: map-get($colors, backgroundLightMain);
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0rem;
     }
 }

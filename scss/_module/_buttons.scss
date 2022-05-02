@@ -54,3 +54,14 @@
     border: solid grey 1px;
 }
 
+.m-main-form-button-sendOrder {
+    margin: 0 0 0 auto;
+    border: none;
+    height: 2rem;
+    width: 11rem;
+    border-radius: 0.3rem;
+    background-color: map-get($colors, backgroundDarkMain);
+    color: map-get($colors, textOnLight);
+    font-size: 0.7rem;
+    padding: 0 1rem;
+}
