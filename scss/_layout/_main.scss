@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     padding: 1rem;
 }
 
@@ -12,6 +13,7 @@
     height: 2rem;
     width: auto;
     padding: 0 1rem;
+    margin: 0.5rem 0;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -55,7 +57,7 @@
 
 // registration form
 h1 {
-    padding: 0 1rem;
+    padding: 1rem 0;
 }
 
 .l-main-form, .l-main-block {
@@ -79,7 +81,11 @@ h1 {
     }
 }
 
-.l-main-form-block {
+.l-main-form-block {   
+    padding: 1rem 0;
+    position: relative;
+    margin: 0 1rem 0 0;
+
     label {
         display: block;
     }
@@ -90,6 +96,7 @@ h1 {
         padding: 0 1rem;
         margin: 0 0 1rem 0;
         color: map-get($colors, textOnMedium);
+        display: block;
     }
 
     i {
@@ -107,12 +114,39 @@ h1 {
         background-color: map-get($colors, backgroundLightMain);
         color: map-get($colors, textOnVeryLight);
     }
+
+    div::before {
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background: map-get($colors, backgroundDarkSecondary);
+        position: absolute;
+        bottom: 1rem;
+        left: 0rem;
+    }
 }
 
-.l-main-form-block-icon {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+.l-main-form-block-icon, .l-main-form-block-connexion {
+    padding: 1rem 0;
+    position: relative;
+    margin: 0 1rem 0 0;
+    
+    div::before {
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background: map-get($colors, textOnMedium);
+        position: absolute;
+        bottom: 0rem;
+        left: 0rem;
+    }   
+
+    input {
+        border: 0px;
+        color: map-get($colors, textOnMedium);
+    }
 }
 
 .l-main-form-check {
@@ -227,5 +261,41 @@ h1 {
         position: absolute;
         bottom: -0.5rem;
         left: 0rem;
+    }
+}
+
+// Product Description
+.l-main-form-productDescription-image {
+
+    img {
+        width: auto;
+        height : auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.l-main-form-productDescription-text, .l-main-form-productDescription-form {
+
+    p {
+        color: map-get($colors, textOnMedium);
+        padding-right: 1rem;
+    }
+
+    p:first-child {
+        color: map-get($colors, decoration);
+        font-weight: bold;
+        padding: 2rem 0 0 0;
+    }
+}
+
+.l-main-form-productDescription-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .l-main-form-block{
+        width: 25%;
     }
 }

@@ -5,7 +5,7 @@
 }
 
 .m-main-form-button, .m-main-form-buttonSecondary, .m-main-form-buttonThirdary {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     border: none;
     height: 2rem;
     border-radius: 0.3rem;
@@ -35,11 +35,32 @@
     color: map-get($colors, textOnLight);
     font-size: 0.7rem;
     padding: 0 1rem;
+
+    .fa-shopping-cart {
+        padding: 0 1rem 0 0;
+    }
 }
 
 .fa-check {
     color: map-get($colors, textOnLight);
     margin: 0 1rem 0 0;
+}
+
+.m-main-button-trash {
+    background-color: map-get($colors, backgroundLightMain);
+    border: 1px solid grey;
+    border-radius: 15%;
+    width: 1.3rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+
+    .fa-trash {
+        color: map-get($colors, textOnVeryLight);
+        padding: 0 auto;
+    }
 }
 
 // button Secondary
