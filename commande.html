@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/screen.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>InforShop Commande</title>
+</head>
+<body>
+    <header>
+        <nav class="l-nav">
+            <div class="l-nav-top">
+                <div class="l-nav-logo-wrapper">
+                    <div class="l-nav-logo">
+                    </div>
+                </div>
+                <div class="l-nav-menu">
+                    <label for="trigger"></label>
+                    <input type="checkbox" class="trigger" id="trigger" />
+                    <div class="l-nav-menu-wrapper">
+                        <div class="l-nav-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <nav class="l-nav-tree">
+                        <ul> 
+                            <li><a href="index.html">Acceuil</a></li>
+                            <li><a href="produits.html">Produits</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>       
+                </div>
+            </div>
+            <div class="l-nav-icons">
+                <div class="l-nav-icons-account">
+                    <i class="fas fa-user"></i>
+                    <p>Compte</p>
+                </div>
+                <div class="l-nav-icons-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Panier</p>
+                </div>
+            </div>
+            <div class="l-nav-search">
+                <form action="post.php">
+                    <div class="l-nav-search-wrapper">
+                        <input type="text" name="Search" id="Search" value="Chercher un produit ...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+            </div>
+        </nav> 
+    </header>
+    <main>
+        <div class="l-main-ariane">
+            <div class="l-main-ariane-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="l-main-ariane-sign">
+                <span>></span>
+            </div>
+            <div class="l-main-ariane-block">
+                <p>Mon panier</p>
+            </div>
+            <div class="l-main-ariane-sign">
+                <span>></span>
+            </div>
+            <div class="l-main-ariane-block">
+                <p>Commande</p>
+            </div>
+        </div>
+        <div class="l-main-form"> 
+            <h1>Commande</h1>
+            <h2>Adresse de livraison</h2>
+            <form action="post.php" method="post">
+                <div class="l-main-form-block">
+                    <label>Rue*</label>
+                    <div class="l-main-form-block-icon">
+                        <input type="text" name="Street" id="Street1" placeholder="Rue" required>
+                        <i class="fas fa-home"></i>
+                    </div>
+                </div>
+                <div class="l-main-form-block">
+                    <div>
+                        <label>Numéro de maison*</label>
+                        <div class="l-main-form-block-icon">
+                            <input type="text" name="Number" id="Number1" placeholder="Numéro de maison" required>
+                            <i class="fas fa-tag"></i>
+                        </div>    
+                    </div>   
+                </div>
+                <div class="l-main-form-block">
+                    <div>
+                        <label>Localité*</label>
+                        <div class="l-main-form-block-icon">
+                            <input type="text" name="City" id="City1" placeholder="Localité" required>
+                            <i class="fas fa-city"></i>
+                        </div>
+                    </div>   
+                </div>
+                <div class="l-main-form-block">
+                    <div>
+                        <label>Code postal*</label>
+                        <div class="l-main-form-block-icon">
+                            <input type="text" name="Zip" id="Zip1" placeholder="Code postal" required> 
+                            <i class="fas fa-city"></i>   
+                        </div>
+                    </div>
+                </div>
+                <div class="l-main-form-block">
+                    <div>
+                        <label>Pays*</label>
+                        <div class="l-main-form-block-icon">
+                            <select name="Country" id="Country1">
+                            <option value="Pays">Pays</option>
+                            </select>
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <h2>Adresse de facturation</h2>
+            <form action="post.php" method="post">
+                <div class="l-main-form-block">
+                    <label>Rue*</label>
+                    <div class="l-main-form-block-icon">
+                        <input type="text" name="Street" id="Street2" placeholder="Rue" required>
+                        <i class="fas fa-home"></i>
+                    </div>
+                </div>
+                <div class="l-main-form-block">
+                    <div>
+                        <label>Numéro de maison*</label>
+                        <div class="l-main-form-block-icon">
+                            <input type="text" name="Number" id="Number2" placeholder="Numéro de maison" required>
+                            <i class="fas fa-tag"></i>
+                        </div>    
+                    </div>   
+                </div>
+                <div class="l-main-form-block">
+                    <div>
+                        <label>Localité*</label>
+                        <div class="l-main-form-block-icon">
+                            <input type="text" name="City" id="City2" placeholder="Localité" required>
+                            <i class="fas fa-city"></i>
+                        </div>
+                    </div>   
+                </div>
+                <div class="l-main-form-block">
+                    <div>
+                        <label>Code postal*</label>
+                        <div class="l-main-form-block-icon">
+                            <input type="text" name="Zip" id="Zip2" placeholder="Code postal" required> 
+                            <i class="fas fa-city"></i>   
+                        </div>
+                    </div>
+                </div>
+                <div class="l-main-form-block">
+                    <div>
+                        <label>Pays*</label>
+                        <div class="l-main-form-block-icon">
+                            <select name="Country" id="Country2">
+                            <option value="Pays">Pays</option>
+                            </select>
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <h2>Moyen de paiement</h2>
+            <form action="post.php" method="post">
+                <div>
+                    <label>Moyen de paiement*</label>
+                    <div class="l-main-form-block-icon">
+                        <select name="Payment" id="Payment">
+                        <option value="Payment">Moyen de paiement</option>
+                        </select>
+                        <i class="far fa-credit-card"></i>
+                    </div>
+                    <button type="button" name="inscription" class="m-main-form-button">
+                        <i class="fas fa-save"></i>
+                        <span>Valider</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="l-footer">
+            <p>
+                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href="https://github.com/RRINKIN">RAF</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

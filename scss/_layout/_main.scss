@@ -56,8 +56,10 @@
 }
 
 // registration form
-h1 {
-    padding: 1rem 0;
+.l-main-superTitle{
+    h1 {
+    padding: 1rem;
+    }
 }
 
 .l-main-form, .l-main-block {
@@ -115,7 +117,7 @@ h1 {
         color: map-get($colors, textOnVeryLight);
     }
 
-    div::before {
+     > div::before {
         display: block;
         content: '';
         height: 1px;
@@ -131,6 +133,9 @@ h1 {
     padding: 1rem 0;
     position: relative;
     margin: 0 1rem 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     
     div::before {
         display: block;
@@ -141,11 +146,17 @@ h1 {
         position: absolute;
         bottom: 0rem;
         left: 0rem;
-    }   
+    }
 
     input {
         border: 0px;
         color: map-get($colors, textOnMedium);
+    }
+
+    i {
+        padding: 0 1rem 0 0;
+        position: absolute;
+        justify-content: end;
     }
 }
 

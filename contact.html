@@ -64,39 +64,49 @@
             <h1>Contact US</h1>
             <form action="post.php" method="post">
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-user"></i>
-                        <label>Votre prénom & nom*</label>
+                    <div>
+                        <div class="l-main-form-block-icon">
+                            <i class="fas fa-user"></i>
+                            <label>Votre prénom & nom*</label>
+                        </div>
+                        <input type="text" name="Name" id="Name" placeholder="Votre prénom & nom" required>
                     </div>
-                    <input type="text" name="Name" id="Name" value="Votre prénom & nom" required>
                 </div>
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-envelope"></i>
-                        <label>Email*</label>
+                    <div>
+                        <div class="l-main-form-block-icon">
+                            <i class="fas fa-envelope"></i>
+                            <label>Email*</label>
+                        </div>
+                        <input type="text" name="Email" id="Email" placeholder="Votre e-mail (pour vous répondre)" required>
                     </div>
-                    <input type="text" name="Email" id="Email" value="Votre e-mail (pour vous répondre)" required>
                 </div>
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-phone"></i>
-                        <label>Votre téléphone*</label>
+                    <div>
+                        <div class="l-main-form-block-icon">
+                            <i class="fas fa-phone"></i>
+                            <label>Votre téléphone*</label>
+                        </div>
+                        <input type="text" name="Phone" id="Phone" placeholder="Votre téléphone" required>
                     </div>
-                    <input type="text" name="Phone" id="Phone" value="Votre téléphone" required>
                 </div>
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-comment"></i>
-                        <label>De quoi souhaitez-vous parler?*</label>
+                    <div>
+                        <div class="l-main-form-block-icon">
+                            <i class="fas fa-comment"></i>
+                            <label>De quoi souhaitez-vous parler?*</label>
+                        </div>
+                        <input type="text" name="Message" id="Message" placeholder="De quoi souhaitez-vous parler?" required>
                     </div>
-                    <input type="text" name="Message" id="Message" value="De quoi souhaitez-vous parler?" required>
                 </div>
                 <div class="l-main-form-block">
-                    <div class="l-main-form-block-icon">
-                        <i class="fas fa-comment"></i>
-                        <label>Expliquez-moi en détail...*</label>
+                    <div>
+                        <div class="l-main-form-block-icon">
+                            <i class="fas fa-comment"></i>
+                            <label>Expliquez-moi en détail...*</label>
+                        </div>
+                        <input type="text" name="Details" id="Details" placeholder="Expliquez-moi en détail..." required>
                     </div>
-                    <input type="text" name="Details" id="Details" value="Expliquez-moi en détail..." required>
                 </div>
                 <button type="button" name="envoyer" class="m-main-form-button-send">
                     <a href="mailto:info@inforShop.be">Envoyer</a>

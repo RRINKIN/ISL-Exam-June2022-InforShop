@@ -319,8 +319,8 @@ footer {
   color: #e37823;
 }
 
-h1 {
-  padding: 1rem 0;
+.l-main-superTitle h1 {
+  padding: 1rem;
 }
 
 .l-main-form, .l-main-block {
@@ -379,7 +379,7 @@ h1 {
   color: #3a3939;
 }
 
-.l-main-form-block div::before {
+.l-main-form-block > div::before {
   display: block;
   content: '';
   height: 1px;
@@ -394,6 +394,16 @@ h1 {
   padding: 1rem 0;
   position: relative;
   margin: 0 1rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .l-main-form-block-icon div::before, .l-main-form-block-connexion div::before {
@@ -410,6 +420,10 @@ h1 {
 .l-main-form-block-icon input, .l-main-form-block-connexion input {
   border: 0px;
   color: #918e8e;
+}
+
+.l-main-form-block-icon i, .l-main-form-block-connexion i {
+  padding: 0 1rem 0 0;
 }
 
 .l-main-form-check {
@@ -638,7 +652,7 @@ h1 {
           flex-direction: column;
 }
 
-.m-main-form-button, .m-main-form-buttonSecondary, .m-main-form-buttonThirdary {
+.m-main-form-button, .m-main-form-buttonSecondary, .m-main-form-buttonThirdary, .m-main-form-button-send {
   margin: 1rem 1rem 1rem 0;
   border: none;
   height: 2rem;
@@ -651,13 +665,7 @@ h1 {
 
 .m-main-form-button-send {
   margin: 1rem;
-  border: none;
-  height: 2rem;
-  border-radius: 0.3rem;
   background-color: #216eb8;
-  color: white;
-  font-size: 0.7rem;
-  padding: 0 1rem;
 }
 
 .m-main-product-button {
