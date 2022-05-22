@@ -151,3 +151,123 @@ header {
     color: map-get($colors, textOnMedium);
     margin: auto;
 }
+
+/* media queries Tablet Version */
+@media screen and (min-width: 600px) {
+    .l-nav-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        background-size: cover;
+        min-width: map-get($screenSize, tabletMinScreenSize);
+        max-width: 1300px;
+        background: map-get($colors, gradient);
+        padding-bottom: 1rem;
+    }
+    
+    // logo
+    .l-nav-logo-wrapper {
+        background-color: map-get($colors, backgroundLightSecondary);
+        border-radius: 0 0 10% 10%;
+        height: 3.5rem;
+        width: 5rem;
+        margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .l-nav-logo {
+        background-image: url("../images/inforshop.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 3rem;
+        width: 4rem;
+    }
+    
+    // burger
+    .l-nav-menu-wrapper {
+        display: none;
+        }
+    
+    .l-nav-burger {
+        display: none;
+    }
+    
+    .trigger {
+        display: none;
+      }
+    
+    // navigation
+    .l-nav-tree {
+
+    }
+
+    // account icons
+    .l-nav-icons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    
+        p {
+            font-size: 0.7rem;
+            margin: 0;
+        }
+    }
+    
+    .l-nav-icons-account, .l-nav-icons-cart {
+        color: map-get($colors, textOnLight);
+        font-size: 1.5rem;
+        margin: 1rem 0 0 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .l-nav-icons-cart {
+        position: relative;
+    }
+    
+    .l-nav-icons-cart::before {
+        content: "0";
+        height: 1.25rem;
+        width: 0.8rem;
+        border-radius: 50%;
+        background-color: map-get($colors, decoration);
+        font-size: 1rem;
+        position: absolute;
+        top: -0.7rem;
+        left: 1rem;
+        padding: 0 0 0 0.3rem;
+    }
+    
+    // search
+    .l-nav-search {
+        background-color: map-get($colors, backgroundLightSecondary);
+        margin: 1rem 1rem 0 1rem;
+        height: 1.5rem;
+        padding-top: 0.4rem;
+    }
+    
+    .fa-search {
+        color: map-get($colors, textOnMedium);
+    }
+    
+    .l-nav-search-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .l-nav-search-wrapper input,i {
+        border: 0;
+        color: map-get($colors, textOnMedium);
+        margin: auto;
+    }
+}

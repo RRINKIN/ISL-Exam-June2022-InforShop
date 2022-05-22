@@ -27,3 +27,19 @@ h3 {
 time {
     font-weight: bold;
 }
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: map-get($screenSize, tabletMinScreenSize);
+        background-color: map-get($colors, backgroundLightMain);
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    body {
+        max-width: map-get($screenSize, laptopMaxScreenSize);
+        background-color: map-get($colors, backgroundLightMain);
+        margin: 0px auto;
+    }
+}

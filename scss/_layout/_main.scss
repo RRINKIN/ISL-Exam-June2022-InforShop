@@ -62,7 +62,7 @@
     }
 }
 
-.l-main-form, .l-main-block {
+.l-main-form, .l-main-block, .l-main-bloc {
     background-color: map-get($colors, backgroundLightSecondary);
     margin: 1rem;
     padding: 1rem 0 1rem 1rem;
@@ -310,3 +310,67 @@
         width: 25%;
     }
 }
+
+// welcome page
+.l-main-bloc {
+    height: auto;
+}
+
+.l-aside-welcomeimage {
+    background: url("../images/InforShop_Store_small.jpg");
+    width: auto;
+    height: 15rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.l-main-productTeaser {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    max-width: 280px;
+
+    .l-nav-productTeaser-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        i {
+            color: map-get($colors, textOnVeryLight);
+            font-size: 2rem;   
+        }
+
+        p {
+            color: map-get($colors, decoration);
+        }
+}
+
+.l-main-productPromo-image {
+    max-width: 330px;
+    width: 100%;
+}
+
+/* media queries Tablet Version */
+@media screen and (min-width: 600px) {
+    .l-nav-menu {
+      max-width: 1130px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* media queries PC Version */
+@media screen and (min-width: 980px) {
+    .l-nav-menu {
+      max-width: 1130px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }

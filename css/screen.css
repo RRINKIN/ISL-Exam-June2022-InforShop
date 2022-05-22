@@ -323,7 +323,7 @@ footer {
   padding: 1rem;
 }
 
-.l-main-form, .l-main-block {
+.l-main-form, .l-main-block, .l-main-bloc {
   background-color: white;
   margin: 1rem;
   padding: 1rem 0 1rem 1rem;
@@ -424,6 +424,10 @@ footer {
 
 .l-main-form-block-icon i, .l-main-form-block-connexion i {
   padding: 0 1rem 0 0;
+  position: absolute;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .l-main-form-check {
@@ -605,6 +609,66 @@ footer {
   width: 25%;
 }
 
+.l-main-bloc {
+  height: auto;
+}
+
+.l-aside-welcomeimage {
+  background: url("../images/InforShop_Store_small.jpg");
+  width: auto;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.l-main-productTeaser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.l-main-productTeaser .l-nav-productTeaser-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-productTeaser i {
+  color: #3a3939;
+  font-size: 2rem;
+}
+
+.l-main-productTeaser p {
+  color: #e37823;
+}
+
+.l-main-productPromo-image {
+  max-width: 330px;
+  width: 100%;
+}
+
 .l-nav-tree {
   position: absolute;
   left: -150vw;
@@ -679,7 +743,7 @@ footer {
   padding: 0 1rem;
 }
 
-.m-main-product-button .fa-shopping-cart {
+.m-main-product-button .fa-shopping-cart, .m-main-product-button .fa-save {
   padding: 0 1rem 0 0;
 }
 

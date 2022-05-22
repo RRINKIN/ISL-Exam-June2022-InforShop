@@ -21,11 +21,9 @@ $colors: (
 );
 
 $screenSize: (
-    smartphoneMinScreenSize: 1px,
-    tabletMinScreenSize: 331px,
-    laptopMinScreenSize: 721px,
     smartphoneMaxScreenSize: 330px,
-    tabletMaxScreenSize: 720px,
+    tabletMinScreenSize: 600px,
+    laptopMinScreenSize: 980px,
     laptopMaxScreenSize: 1100px,
 );
 
