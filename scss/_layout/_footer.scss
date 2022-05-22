@@ -11,3 +11,19 @@ footer {
     padding-top: 1.5rem;
     color: map-get($colors, textOnLight);
 }
+
+@media screen and (min-width: 600px) {
+    footer {
+        max-width: 100%;
+        background: map-get($colors, gradient);
+        padding-bottom: 1rem;
+    }
+    
+    .l-footer p {
+        font-size: 0.7rem;
+        text-align: left;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        color: map-get($colors, textOnLight);
+    }
+}

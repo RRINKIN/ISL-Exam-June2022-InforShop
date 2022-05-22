@@ -365,12 +365,8 @@
       align-items: center;
     }
 
-    /* media queries PC Version */
-@media screen and (min-width: 980px) {
-    .l-nav-menu {
-      max-width: 1130px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .l-aside-welcomeimage {
+        background: url("../images/InforShop_Store_large.jpg");
+        background-size: cover;
     }
+}

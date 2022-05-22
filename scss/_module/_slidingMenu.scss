@@ -34,4 +34,25 @@
         color: map-get($colors, decoration);
     }
 }
-  
+
+@media screen and (min-width: 600px) {
+    .l-nav-tree {
+        position: absolute;
+        left: 0vw;
+        top: 4rem;
+        transition-duration: 0s;
+        width: 100%;
+        height: auto;
+        background: none;
+        z-index: 0;
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

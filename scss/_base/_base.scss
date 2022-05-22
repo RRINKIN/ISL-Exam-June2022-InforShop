@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    max-width: map-get($screenSize, smartphoneMaxScreenSize);
+    width: 100%;
     background-color: map-get($colors, backgroundLightMain);
     margin: 0px auto;
 }
@@ -30,16 +30,12 @@ time {
 
 @media screen and (min-width: 600px) {
     body {
-        max-width: map-get($screenSize, tabletMinScreenSize);
-        background-color: map-get($colors, backgroundLightMain);
-        margin: 0px auto;
+        max-width: 100%;
     }
 }
 
 @media screen and (min-width: 930px) {
     body {
         max-width: map-get($screenSize, laptopMaxScreenSize);
-        background-color: map-get($colors, backgroundLightMain);
-        margin: 0px auto;
     }
 }
