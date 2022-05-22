@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: $font-main;
     font-size: map-get($fontSize, textMain);
@@ -29,13 +33,9 @@ time {
 }
 
 @media screen and (min-width: 600px) {
-    body {
-        max-width: 100%;
-    }
+
 }
 
 @media screen and (min-width: 930px) {
-    body {
-        max-width: map-get($screenSize, laptopMaxScreenSize);
-    }
+    
 }

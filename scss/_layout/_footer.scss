@@ -5,11 +5,16 @@ footer {
     padding-bottom: 1rem;
 }
 
-.l-footer p {
-    font-size: 0.7rem;
-    text-align: center;
-    padding-top: 1.5rem;
-    color: map-get($colors, textOnLight);
+.l-footer {
+    max-width: map-get($screenSize, laptopMaxScreenSize);
+    margin: 0 auto;
+
+    p {
+        font-size: 0.7rem;
+        text-align: center;
+        padding-top: 1.5rem;
+        color: map-get($colors, textOnLight);
+    } 
 }
 
 @media screen and (min-width: 600px) {

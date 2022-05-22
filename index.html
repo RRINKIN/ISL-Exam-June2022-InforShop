@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/screen.css" />
+    <link rel="stylesheet" href="/css/screen.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title>InforShop Accueil</title>
 </head>
 <body>
     <header>
-        <nav class="l-nav">
-            <div class="l-nav-top">
-                <div class="l-nav-logo-wrapper">
-                    <div class="l-nav-logo">
-                    </div>
+        <div class="l-nav">
+            <div class="l-nav-logo-wrapper">
+                <div class="l-nav-logo">
                 </div>
+            </div>
+            <div class="l-nav-top">
                 <div class="l-nav-menu">
                     <label for="trigger">
                     <input type="checkbox" class="trigger" id="trigger" />
@@ -32,7 +32,8 @@
                             <li><a href="produits.html">Produits</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-                    </nav>       
+                    </nav>   
+                    </label>    
                 </div>
             </div>
             <div class="l-nav-icons">
@@ -48,23 +49,27 @@
             <div class="l-nav-search">
                 <form action="post.php">
                     <div class="l-nav-search-wrapper">
-                        <input type="text" name="Search" id="Search" value="Chercher un produit ...">
-                        <i class="fas fa-search"></i>
+                        <input type="text" name="search" id="search" value="" placeholder="Chercher un produit ...">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
                 </form>
             </div>
-        </nav> 
+        </div> 
     </header>
-    <body>
-        <aside class="l-aside-welcomeimage">
-        </aside>
-        <div class="l-main-bloc">
-            <h1>
-                Bienvenu chez InforShop
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit accusamus iusto vitae eaque impedit necessitatibus, nisi iste officiis sed amet repellat reprehenderit voluptates corrupti nulla quas explicabo? Ullam numquam voluptate natus temporibus repudiandae iste minus recusandae ad nostrum, in a!
-            </p>
+    <main class="l-main">
+        <div class="l-main-home">
+            <aside class="l-aside-welcomeimage">
+            </aside>
+            <div class="l-main-bloc">
+                <h1>
+                    Bienvenu chez InforShop
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit accusamus iusto vitae eaque impedit necessitatibus, nisi iste officiis sed amet repellat reprehenderit voluptates corrupti nulla quas explicabo? Ullam numquam voluptate natus temporibus repudiandae iste minus recusandae ad nostrum, in a!
+                </p>
+            </div>
         </div>
         <div class="l-main-bloc">
             <h2>Nos produits</h2>
@@ -92,8 +97,6 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem expedita molestiae asperiores! Debitis quo quidem quis neque magnam sapiente!</p>
             <img src="./images/HP_Pavillong_Gaming.avif" alt="HP_Pavillong_Gaming" class="l-main-productPromo-image">
         </div>
-    </body>
-    <main>
     </main>
     <footer>
         <div class="l-footer">

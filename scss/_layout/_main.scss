@@ -1,3 +1,9 @@
+.l-main {
+    max-width: map-get($screenSize, laptopMaxScreenSize);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 // Ariane line
 .l-main-ariane {
     display: flex;
@@ -64,8 +70,8 @@
 
 .l-main-form, .l-main-block, .l-main-bloc {
     background-color: map-get($colors, backgroundLightSecondary);
-    margin: 1rem;
-    padding: 1rem 0 1rem 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
     color: map-get($colors, backgroundDarkSecondary);
 }
 
@@ -96,7 +102,7 @@
         border: 0;
         width: 85%;
         padding: 0 1rem;
-        margin: 0 0 1rem 0;
+        margin: 0;
         color: map-get($colors, textOnMedium);
         display: block;
     }
@@ -121,7 +127,7 @@
         display: block;
         content: '';
         height: 1px;
-        width: 100%;
+        width: 99%;
         background: map-get($colors, backgroundDarkSecondary);
         position: absolute;
         bottom: 1rem;
@@ -151,12 +157,15 @@
     input {
         border: 0px;
         color: map-get($colors, textOnMedium);
+        width: 100%;
+        padding-right: 2rem;
+        outline: 0;
     }
 
     i {
         padding: 0 1rem 0 0;
         position: absolute;
-        justify-content: end;
+        right: 0;
     }
 }
 
@@ -368,5 +377,28 @@
     .l-aside-welcomeimage {
         background: url("../images/InforShop_Store_large.jpg");
         background-size: cover;
+    }
+
+    .l-main-home {
+        display: flex;
+
+        .l-main-bloc {
+            margin: 0 0 0 2rem;
+            width: 70%;
+        }
+
+        .l-aside-welcomeimage {
+            width: 30%;
+        }
+    }
+
+    .l-main-form-commande {
+        display: flex;
+        flex-wrap: wrap;
+
+        .l-main-form-block {
+            width: 50%;
+            margin: 0;
+        }
     }
 }

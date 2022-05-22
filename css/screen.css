@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-family: calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   font-size: 16px;
@@ -28,24 +33,12 @@ time {
   font-weight: bold;
 }
 
-@media screen and (min-width: 600px) {
-  body {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 930px) {
-  body {
-    max-width: 1100px;
-  }
-}
-
 header {
   background: linear-gradient(45deg, #216eb8, #263585);
   padding-bottom: 1rem;
 }
 
-.l-nav-top {
+.l-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +54,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1130px;
+  margin: 0 auto;
 }
 
 .l-nav-logo-wrapper {
@@ -172,6 +167,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .l-nav-icons p {
@@ -186,13 +182,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-nav-icons-cart {
@@ -213,10 +209,8 @@ header {
 }
 
 .l-nav-search {
-  background-color: white;
-  margin: 1rem 1rem 0 1rem;
-  height: 1.5rem;
-  padding-top: 0.4rem;
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .fa-search {
@@ -237,16 +231,32 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
-.l-nav-search-wrapper input, i {
+.l-nav-search-wrapper input {
   border: 0;
   color: #918e8e;
-  margin: auto;
+  width: 100%;
+  background-color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.l-nav-search-wrapper button {
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 /* media queries Tablet Version */
 @media screen and (min-width: 600px) {
+  header {
+    padding-bottom: 0;
+  }
   .l-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -258,9 +268,18 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .l-nav-top {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
   }
   .l-nav-logo-wrapper {
     height: 5rem;
@@ -270,21 +289,28 @@ header {
     height: 5rem;
     width: 6rem;
     margin-top: 1rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .l-nav-icons {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     margin: 0 1rem;
+    width: auto;
   }
   .l-nav-icons p {
     font-size: 1rem;
   }
   .l-nav-search {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
   .l-nav-search-wrapper input, i {
     margin: 0 1rem;
@@ -299,6 +325,11 @@ footer {
   max-width: 330px;
   background: linear-gradient(45deg, #216eb8, #263585);
   padding-bottom: 1rem;
+}
+
+.l-footer {
+  max-width: 1130px;
+  margin: 0 auto;
 }
 
 .l-footer p {
@@ -321,6 +352,12 @@ footer {
     padding-left: 2rem;
     color: white;
   }
+}
+
+.l-main {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .l-main-ariane {
@@ -399,8 +436,8 @@ footer {
 
 .l-main-form, .l-main-block, .l-main-bloc {
   background-color: white;
-  margin: 1rem;
-  padding: 1rem 0 1rem 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
   color: #216eb8;
 }
 
@@ -432,7 +469,7 @@ footer {
   border: 0;
   width: 85%;
   padding: 0 1rem;
-  margin: 0 0 1rem 0;
+  margin: 0;
   color: #918e8e;
   display: block;
 }
@@ -457,7 +494,7 @@ footer {
   display: block;
   content: '';
   height: 1px;
-  width: 100%;
+  width: 99%;
   background: #216eb8;
   position: absolute;
   bottom: 1rem;
@@ -494,14 +531,15 @@ footer {
 .l-main-form-block-icon input, .l-main-form-block-connexion input {
   border: 0px;
   color: #918e8e;
+  width: 100%;
+  padding-right: 2rem;
+  outline: 0;
 }
 
 .l-main-form-block-icon i, .l-main-form-block-connexion i {
   padding: 0 1rem 0 0;
   position: absolute;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  right: 0;
 }
 
 .l-main-form-check {
@@ -762,6 +800,29 @@ footer {
     background: url("../images/InforShop_Store_large.jpg");
     background-size: cover;
   }
+  .l-main-home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .l-main-home .l-main-bloc {
+    margin: 0 0 0 2rem;
+    width: 70%;
+  }
+  .l-main-home .l-aside-welcomeimage {
+    width: 30%;
+  }
+  .l-main-form-commande {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .l-main-form-commande .l-main-form-block {
+    width: 50%;
+    margin: 0;
+  }
 }
 
 .l-nav-tree {
@@ -773,7 +834,7 @@ footer {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(45deg, #216eb8, #263585);
-  z-index: 1;
+  z-index: 2;
 }
 
 .trigger:checked ~ .l-nav-tree {
@@ -792,20 +853,37 @@ footer {
   color: white;
   text-decoration: none;
   display: block;
-  margin: 0.5rem;
+  padding: 0.5rem;
   text-align: center;
-  margin: 2rem;
+  position: relative;
+}
+
+.l-nav-tree a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #e37823;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
 }
 
 .l-nav-tree a:hover {
   color: #e37823;
 }
 
+.l-nav-tree a:hover::after {
+  opacity: 1;
+}
+
 @media screen and (min-width: 600px) {
   .l-nav-tree {
-    position: absolute;
+    position: relative;
     left: 0vw;
-    top: 4rem;
+    top: 0;
     -webkit-transition-duration: 0s;
             transition-duration: 0s;
     width: 100%;
@@ -829,6 +907,9 @@ footer {
             align-items: center;
     padding: 0;
     margin: 0;
+  }
+  .l-nav-tree a {
+    padding: 1rem;
   }
 }
 

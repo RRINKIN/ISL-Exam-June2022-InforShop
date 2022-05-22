@@ -3,12 +3,14 @@ header {
     padding-bottom: 1rem;
 }
 
-.l-nav-top {
+.l-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    max-width: map-get($screenSize, laptopMaxScreenSize);
+    margin: 0 auto;
 }
 
 // logo
@@ -92,6 +94,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
 
     p {
         font-size: 0.7rem;
@@ -104,8 +107,8 @@ header {
     font-size: 1.5rem;
     margin: 1rem 0 0 1rem;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .l-nav-icons-cart {
@@ -127,10 +130,8 @@ header {
 
 // search
 .l-nav-search {
-    background-color: map-get($colors, backgroundLightSecondary);
-    margin: 1rem 1rem 0 1rem;
-    height: 1.5rem;
-    padding-top: 0.4rem;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .fa-search {
@@ -142,21 +143,45 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
+    position: relative;
 
-.l-nav-search-wrapper input,i {
-    border: 0;
-    color: map-get($colors, textOnMedium);
-    margin: auto;
+    input {
+        border: 0;
+        color: map-get($colors, textOnMedium);
+        width: 100%;
+        background-color: map-get($colors, backgroundLightSecondary);
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    button {
+        position: absolute;
+        z-index: 1;
+        border: none;
+        background-color: transparent;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
 }
 
 /* media queries Tablet Version */
 @media screen and (min-width: 600px) {
+    header {
+        padding-bottom: 0;
+    }
+
     .l-nav {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .l-nav-top {
+        order: 4;
+        width: 100%;
+        padding: 1rem 1rem 0 1rem;
     }
     
     // logo
@@ -169,12 +194,14 @@ header {
         height: 5rem;
         width: 6rem;
         margin-top: 1rem;
+        order: 1;
     }
     
     // account icons
     .l-nav-icons {
-        order: 2;
+        order: 3;
         margin: 0 1rem;
+        width: auto;
     
         p {
             font-size: 1rem;
@@ -183,8 +210,9 @@ header {
 
     // search
     .l-nav-search {
-        order: 1;
-        width: 100%;
+        order: 2;
+        width: auto;
+        flex: 1 1 auto;
     }
     
     .l-nav-search-wrapper input,i {

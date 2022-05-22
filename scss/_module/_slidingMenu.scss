@@ -7,7 +7,7 @@
     width: 100vw;
     height: 100vh;
     background: map-get($colors, gradient);
-    z-index: 1;
+    z-index: 2;
 
     .trigger:checked ~ & {
         left: 0;
@@ -25,21 +25,37 @@
         color: map-get($colors, textOnLight);
         text-decoration: none;
         display: block;
-        margin: 0.5rem;
+        padding: 0.5rem;
         text-align: center;
-        margin: 2rem;
-    }
+        position: relative;
 
-    a:hover {
-        color: map-get($colors, decoration);
+        &::after {
+            content:"";
+            position: absolute;
+            width: 100%;
+            background-color: map-get($colors, decoration);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 150ms linear;
+        }
+
+        &:hover {
+            color: map-get($colors, decoration);
+            
+            &::after {
+                opacity: 1;
+            }
+        }
     }
 }
 
 @media screen and (min-width: 600px) {
     .l-nav-tree {
-        position: absolute;
+        position: relative;
         left: 0vw;
-        top: 4rem;
+        top: 0;
         transition-duration: 0s;
         width: 100%;
         height: auto;
@@ -53,6 +69,10 @@
             align-items: center;
             padding: 0;
             margin: 0;
+        }
+
+        a {
+            padding: 1rem;
         }
     }
 }

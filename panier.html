@@ -10,12 +10,12 @@
 </head>
 <body>
     <header>
-        <nav class="l-nav">
-            <div class="l-nav-top">
-                <div class="l-nav-logo-wrapper">
-                    <div class="l-nav-logo">
-                    </div>
+        <div class="l-nav">
+            <div class="l-nav-logo-wrapper">
+                <div class="l-nav-logo">
                 </div>
+            </div>
+            <div class="l-nav-top">
                 <div class="l-nav-menu">
                     <label for="trigger">
                     <input type="checkbox" class="trigger" id="trigger" />
@@ -32,7 +32,8 @@
                             <li><a href="produits.html">Produits</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-                    </nav>       
+                    </nav>   
+                    </label>    
                 </div>
             </div>
             <div class="l-nav-icons">
@@ -45,17 +46,19 @@
                     <p>Panier</p>
                 </div>
             </div>
-            <div class="l-nav-search"> 
+            <div class="l-nav-search">
                 <form action="post.php">
                     <div class="l-nav-search-wrapper">
-                        <input type="text" name="Search" id="Search" value="Chercher un produit ...">
-                        <i class="fas fa-search"></i>
+                        <input type="text" name="search" id="search" value="" placeholder="Chercher un produit ...">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
                 </form>
             </div>
-        </nav> 
+        </div> 
     </header>
-    <main>
+    <main class="l-main">
         <div class="l-main-ariane">
             <div class="l-main-ariane-icon">
                 <i class="fas fa-home"></i>
