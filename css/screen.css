@@ -471,6 +471,7 @@ footer {
   margin: 0;
   color: #918e8e;
   display: block;
+  outline: none;
 }
 
 .l-main-form-block i {
@@ -695,7 +696,6 @@ footer {
 
 .l-main-form-productDescription-text p, .l-main-form-productDescription-form p {
   color: #918e8e;
-  padding-right: 1rem;
 }
 
 .l-main-form-productDescription-text p:first-child, .l-main-form-productDescription-form p:first-child {
@@ -914,10 +914,18 @@ footer {
             align-items: center;
   }
   .l-main-form-productDescription-wrapper .l-main-form-productDescription-form p {
-    padding: 0 2rem;
+    padding: 0;
   }
   .l-main-form-productDescription-wrapper .l-main-form-productDescription-form .l-main-form-block {
     margin: 0;
+  }
+  .l-main-form-productDescription-wrapper .l-main-form-productDescription-form .l-main-form-productDescription-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
