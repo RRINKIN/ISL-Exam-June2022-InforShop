@@ -1,6 +1,6 @@
 footer {
     background-size: cover;
-    max-width: map-get($screenSize, smartphoneMaxScreenSize);
+    max-width: 100%;
     background: map-get($colors, gradient);
     padding-bottom: 1rem;
 }
@@ -11,7 +11,7 @@ footer {
 
     p {
         font-size: 0.7rem;
-        text-align: center;
+        padding-left: 2rem;
         padding-top: 1.5rem;
         color: map-get($colors, textOnLight);
     } 
@@ -19,13 +19,12 @@ footer {
 
 @media screen and (min-width: 600px) {
     footer {
-        max-width: 100%;
         background: map-get($colors, gradient);
         padding-bottom: 1rem;
     }
     
     .l-footer p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         text-align: left;
         padding-top: 1.5rem;
         padding-left: 2rem;

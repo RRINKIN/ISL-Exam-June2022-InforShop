@@ -1,4 +1,4 @@
-$font-main : calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+$font-main: calibri, Lucia Grande, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 
 $fontSize: (
     textMain: 16px,
@@ -27,9 +27,9 @@ $screenSize: (
     laptopMaxScreenSize: 1130px,
 );
 
-@mixin flex-center{
+/*@mixin flex-center{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+}*/

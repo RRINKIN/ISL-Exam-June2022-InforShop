@@ -17,7 +17,7 @@
             </div>
             <div class="l-nav-top">
                 <div class="l-nav-menu">
-                    <label for="trigger">
+                    <label for="trigger"></label>
                     <input type="checkbox" class="trigger" id="trigger" />
                     <div class="l-nav-menu-wrapper">
                         <div class="l-nav-burger">
@@ -32,8 +32,7 @@
                             <li><a href="produits.html">Produits</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-                    </nav>   
-                    </label>    
+                    </nav>     
                 </div>
             </div>
             <div class="l-nav-icons">
@@ -129,13 +128,15 @@
                 </div>
             </form>
             <h2>Adresse de facturation</h2>
-            <form action="post.php" method="post">
+            <form class="l-main-form-commande" action="post.php" method="post">
                 <div class="l-main-form-block">
-                    <label>Rue*</label>
-                    <div class="l-main-form-block-icon">
-                        <input type="text" name="Street" id="Street2" placeholder="Rue" required>
-                        <i class="fas fa-home"></i>
-                    </div>
+                    <div>
+                        <label>Rue*</label>
+                        <div class="l-main-form-block-icon">
+                            <input type="text" name="Street" id="Street2" placeholder="Rue" required>
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>  
                 </div>
                 <div class="l-main-form-block">
                     <div>
@@ -178,7 +179,7 @@
             </form>
             <h2>Moyen de paiement</h2>
             <form action="post.php" method="post">
-                <div>
+                <div class="l-main-form-paiement">
                     <label>Moyen de paiement*</label>
                     <div class="l-main-form-block-icon">
                         <select name="Payment" id="Payment">
@@ -197,7 +198,7 @@
     <footer>
         <div class="l-footer">
             <p>
-                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href="https://github.com/RRINKIN">RAF</a>
+                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href=#>ISL SCRL</a>
             </p>
         </div>
     </footer>

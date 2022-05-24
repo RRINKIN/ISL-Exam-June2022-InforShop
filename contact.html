@@ -17,7 +17,7 @@
             </div>
             <div class="l-nav-top">
                 <div class="l-nav-menu">
-                    <label for="trigger">
+                    <label for="trigger"></label>
                     <input type="checkbox" class="trigger" id="trigger" />
                     <div class="l-nav-menu-wrapper">
                         <div class="l-nav-burger">
@@ -32,8 +32,7 @@
                             <li><a href="produits.html">Produits</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-                    </nav>   
-                    </label>    
+                    </nav>     
                 </div>
             </div>
             <div class="l-nav-icons">
@@ -59,78 +58,79 @@
         </div> 
     </header>
     <main class="l-main">
-        </div>
         <aside class="l-main-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.1418605723875!2d5.558292615766021!3d50.643056479502384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa164d5c4969%3A0xd379a00de93c696!2sRue%20St%20Laurent%2033%2C%204000%20Li%C3%A8ge!5e0!3m2!1sen!2sbe!4v1650224864286!5m2!1sen!2sbe" width="330" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.1418605723875!2d5.558292615766021!3d50.643056479502384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa164d5c4969%3A0xd379a00de93c696!2sRue%20St%20Laurent%2033%2C%204000%20Li%C3%A8ge!5e0!3m2!1sen!2sbe!4v1650224864286!5m2!1sen!2sbe" width=100% height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </aside>
-        <div class="l-main-form"> 
-            <h1>Contact US</h1>
-            <form action="post.php" method="post">
-                <div class="l-main-form-block">
-                    <div>
-                        <div class="l-main-form-block-icon">
-                            <i class="fas fa-user"></i>
-                            <label>Votre prénom & nom*</label>
+        <div class="l-main-contact-wrapper">
+            <div class="l-main-form"> 
+                <h1>Contact US</h1>
+                <form action="post.php" method="post">
+                    <div class="l-main-form-block">
+                        <div>
+                            <div class="l-main-form-block-icon">
+                                <i class="fas fa-user"></i>
+                                <label>Votre prénom & nom*</label>
+                            </div>
+                            <input type="text" name="Name" id="Name" placeholder="Votre prénom & nom" required>
                         </div>
-                        <input type="text" name="Name" id="Name" placeholder="Votre prénom & nom" required>
                     </div>
-                </div>
-                <div class="l-main-form-block">
-                    <div>
-                        <div class="l-main-form-block-icon">
-                            <i class="fas fa-envelope"></i>
-                            <label>Email*</label>
+                    <div class="l-main-form-block">
+                        <div>
+                            <div class="l-main-form-block-icon">
+                                <i class="fas fa-envelope"></i>
+                                <label>Email*</label>
+                            </div>
+                            <input type="text" name="Email" id="Email" placeholder="Votre e-mail (pour vous répondre)" required>
                         </div>
-                        <input type="text" name="Email" id="Email" placeholder="Votre e-mail (pour vous répondre)" required>
                     </div>
-                </div>
-                <div class="l-main-form-block">
-                    <div>
-                        <div class="l-main-form-block-icon">
-                            <i class="fas fa-phone"></i>
-                            <label>Votre téléphone*</label>
+                    <div class="l-main-form-block">
+                        <div>
+                            <div class="l-main-form-block-icon">
+                                <i class="fas fa-phone"></i>
+                                <label>Votre téléphone*</label>
+                            </div>
+                            <input type="text" name="Phone" id="Phone" placeholder="Votre téléphone" required>
                         </div>
-                        <input type="text" name="Phone" id="Phone" placeholder="Votre téléphone" required>
                     </div>
-                </div>
-                <div class="l-main-form-block">
-                    <div>
-                        <div class="l-main-form-block-icon">
-                            <i class="fas fa-comment"></i>
-                            <label>De quoi souhaitez-vous parler?*</label>
+                    <div class="l-main-form-block">
+                        <div>
+                            <div class="l-main-form-block-icon">
+                                <i class="fas fa-comment"></i>
+                                <label>De quoi souhaitez-vous parler?*</label>
+                            </div>
+                            <input type="text" name="Message" id="Message" placeholder="De quoi souhaitez-vous parler?" required>
                         </div>
-                        <input type="text" name="Message" id="Message" placeholder="De quoi souhaitez-vous parler?" required>
                     </div>
-                </div>
-                <div class="l-main-form-block">
-                    <div>
-                        <div class="l-main-form-block-icon">
-                            <i class="fas fa-comment"></i>
-                            <label>Expliquez-moi en détail...*</label>
+                    <div class="l-main-form-block">
+                        <div>
+                            <div class="l-main-form-block-icon">
+                                <i class="fas fa-comment"></i>
+                                <label>Expliquez-moi en détail...*</label>
+                            </div>
+                            <input type="text" name="Details" id="Details" placeholder="Expliquez-moi en détail..." required>
                         </div>
-                        <input type="text" name="Details" id="Details" placeholder="Expliquez-moi en détail..." required>
                     </div>
-                </div>
-                <button type="button" name="envoyer" class="m-main-form-button-send">
-                    <a href="mailto:info@inforShop.be">Envoyer</a>
-                </button>
-            </form>
-        </div>
-        <div class="l-main-block">
-            <h2>Informations de contact</h2>
-            <p><strong>Inforshop SRL</strong></p>
-            <h3>Adresse</h3>
-            <p>Rue Saint-Laurent 33 <br> 4000 Liège</p>
-            <h3>Téléphone</h3>
-            <p>+32(0)4 365 21 45</p>
-            <h3>Horaire</h3>
-            <p><strong>Notre équipe se tient à votre disposition du lundi au vendredi:</strong> <br>De: 9h00 à 18h00</p>
+                    <button type="button" name="envoyer" class="m-main-form-button-send">
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+            <div class="l-main-block">
+                <h2>Informations de contact</h2>
+                <p><strong>Inforshop SRL</strong></p>
+                <h3>Adresse</h3>
+                <p>Rue Saint-Laurent 33 <br> 4000 Liège</p>
+                <h3>Téléphone</h3>
+                <p>+32(0)4 365 21 45</p>
+                <h3>Horaire</h3>
+                <p><strong>Notre équipe se tient à votre disposition du lundi au vendredi:</strong> <br>De: 9h00 à 18h00</p>
+            </div>
         </div>
     </main>
     <footer>
         <div class="l-footer">
             <p>
-                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href="https://github.com/RRINKIN">RAF</a>
+                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href=#>ISL SCRL</a>
             </p>
         </div>
     </footer>

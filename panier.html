@@ -17,7 +17,7 @@
             </div>
             <div class="l-nav-top">
                 <div class="l-nav-menu">
-                    <label for="trigger">
+                    <label for="trigger"></label>
                     <input type="checkbox" class="trigger" id="trigger" />
                     <div class="l-nav-menu-wrapper">
                         <div class="l-nav-burger">
@@ -33,7 +33,6 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>   
-                    </label>    
                 </div>
             </div>
             <div class="l-nav-icons">
@@ -78,31 +77,38 @@
             <form action="post.php" method="post">
                 <div class="l-main-form-block">
                     <div>
+                        <label for="selectedProduct" class="l-main-form-block-label">Produit</label>
                         <input type="text" name="selectedProduct" id="selectedProduct" value="Clavier Logitech K860">
                     </div>
                 </div>
                 <div class="l-main-form-block">
                     <div>
+                        <label for="selectedQuantity" class="l-main-form-block-label">Quantité</label>
                         <input type="number" name="selectedQuantity" id="selectedQuantity" value="1">
                     </div>
                 </div>
                 <div class="l-main-form-block">
                     <div>
+                        <label for="selectedUniquePrice" class="l-main-form-block-label">Prix unitaire</label>
                         <input type="text" name="selectedUniquePrice" id="selectedUniquePrice" value="100€">
                     </div>
                 </div>
                 <div class="l-main-form-block">
                     <div>
+                        <label for="selectedUniqueTVA" class="l-main-form-block-label">TVA (%)</label>
                         <input type="text" name="selectedUniqueTVA" id="selectedUniqueTVA" value="21">
                     </div>
                 </div>
                 <div class="l-main-form-block">
                     <div>
+                        <label for="selectedTotalPrice" class="l-main-form-block-label">Total HTVA</label>
                         <input type="text" name="selectedTotalPrice" id="selectedTotalPrice" value="100€">
                     </div>
                 </div>
                 <div class="m-main-button-trash">
-                    <i class="fas fa-trash"></i>
+                    <button type="button" name="trash" class="m-main-button-trash-send">
+                        <i class="fas fa-trash"></i>
+                    </button>
                 </div>
                 <div class="l-main-form-totalPrice">
                     <p class="l-main-form-totalPrice-label">Total HTVA</p>
@@ -124,7 +130,7 @@
     <footer>
         <div class="l-footer">
             <p>
-                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href="https://github.com/RRINKIN">RAF</a>
+                &copy; Inforshop.store & site with <i class="fas fa-heart"></i> by <a href=#>ISL SCRL</a>
             </p>
         </div>
     </footer>

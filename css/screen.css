@@ -1,3 +1,9 @@
+/*@mixin flex-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -322,7 +328,7 @@ header {
 
 footer {
   background-size: cover;
-  max-width: 330px;
+  max-width: 100%;
   background: linear-gradient(45deg, #216eb8, #263585);
   padding-bottom: 1rem;
 }
@@ -334,19 +340,18 @@ footer {
 
 .l-footer p {
   font-size: 0.7rem;
-  text-align: center;
+  padding-left: 2rem;
   padding-top: 1.5rem;
   color: white;
 }
 
 @media screen and (min-width: 600px) {
   footer {
-    max-width: 100%;
     background: linear-gradient(45deg, #216eb8, #263585);
     padding-bottom: 1rem;
   }
   .l-footer p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-align: left;
     padding-top: 1.5rem;
     padding-left: 2rem;
@@ -376,7 +381,6 @@ footer {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 1rem;
 }
 
 .l-main-ariane-block, .l-main-ariane-icon {
@@ -393,10 +397,13 @@ footer {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
 }
 
 .fa-home {
   color: #918e8e;
+  padding: 0.5rem;
 }
 
 .l-main-ariane-block p {
@@ -442,7 +449,7 @@ footer {
 }
 
 .l-main-form-date {
-  margin: 2rem 1rem;
+  margin: 2rem 1rem 0 2rem;
   font-size: 0.9rem;
   text-align: end;
 }
@@ -461,13 +468,17 @@ footer {
   margin: 0 1rem 0 0;
 }
 
+.l-main-form-block .l-main-form-block-label {
+  display: none;
+}
+
 .l-main-form-block label {
   display: block;
 }
 
 .l-main-form-block input {
   border: 0;
-  width: 85%;
+  width: 100%;
   padding: 0 1rem;
   margin: 0;
   color: #918e8e;
@@ -748,7 +759,6 @@ footer {
           align-items: center;
   height: 6rem;
   width: 100%;
-  max-width: 280px;
 }
 
 .l-main-productTeaser .l-nav-productTeaser-icons {
@@ -781,7 +791,25 @@ footer {
   width: 100%;
 }
 
-/* media queries Tablet Version */
+.l-main-bloc-promo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: auto;
+}
+
+.l-main-bloc-promo-wrapper .l-main-bloc-promo2 {
+  display: none;
+}
+
+.l-main-bloc-promo-wrapper .l-main-bloc-promo3 {
+  display: none;
+}
+
+/* media queries tablet & laptop version */
 @media screen and (min-width: 600px) {
   .l-nav-menu {
     max-width: 1130px;
@@ -822,6 +850,91 @@ footer {
   .l-main-form-commande .l-main-form-block {
     width: 50%;
     margin: 0;
+  }
+  .l-main-form-commande .l-main-form-block .l-main-form-block-label {
+    display: block;
+  }
+  .l-main-form-paiement {
+    width: 50%;
+  }
+  .l-main-form-paiement .fa-credit-card {
+    margin: 0;
+    padding: 0;
+  }
+  .l-main-contact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .l-main-contact-wrapper .l-main-form {
+    width: 70%;
+  }
+  .l-main-contact-wrapper .l-main-block {
+    width: 30%;
+  }
+  .l-main-form-block-icon label, .l-main-form-block-connexion label {
+    padding: 0 0 0 2rem;
+  }
+  .l-main-form-block-icon i, .l-main-form-block-connexion i {
+    margin: 0;
+    left: 0;
+  }
+  .l-main-bloc-promo-wrapper .l-main-bloc-promo2 {
+    display: block;
+  }
+  .l-main-form-block-groupPer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .l-main-form-block {
+    width: 50%;
+  }
+  .l-main-form-productDescription-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .l-main-form-productDescription-wrapper .l-main-form-productDescription-image {
+    width: 40%;
+  }
+  .l-main-form-productDescription-wrapper .l-main-form-productDescription-text-wrapper {
+    width: 60%;
+  }
+  .l-main-form-productDescription-wrapper .l-main-form-productDescription-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .l-main-form-productDescription-wrapper .l-main-form-productDescription-form p {
+    padding: 0 2rem;
+  }
+  .l-main-form-productDescription-wrapper .l-main-form-productDescription-form .l-main-form-block {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .l-main-bloc-promo-wrapper .l-main-bloc-promo3 {
+    display: block;
   }
 }
 
@@ -945,13 +1058,20 @@ footer {
   height: 2rem;
   border-radius: 0.3rem;
   background-color: #263585;
-  color: white;
   font-size: 0.7rem;
-  padding: 0 1rem;
 }
 
-.m-main-product-button .fa-shopping-cart, .m-main-product-button .fa-save {
+.m-main-product-button .fa-shopping-cart {
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.m-main-product-button .fa-save {
   padding: 0 1rem 0 0;
+}
+
+.m-main-product-button span {
+  color: white;
 }
 
 .fa-check {
@@ -960,10 +1080,8 @@ footer {
 }
 
 .m-main-button-trash {
-  background-color: whitesmoke;
-  border: 1px solid grey;
-  border-radius: 15%;
-  width: 1.3rem;
+  width: auto;
+  margin-right: 1rem;
   height: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,15 +1089,24 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 1rem;
+  padding: 0.5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border-bottom: 1px solid #216eb8;
+}
+
+.m-main-button-trash .m-main-button-trash-send {
+  background: none;
+  border: none;
 }
 
 .m-main-button-trash .fa-trash {
+  background-color: whitesmoke;
   color: #3a3939;
-  padding: 0 auto;
+  padding: 0.2rem;
+  border: 1px solid grey;
+  border-radius: 15%;
 }
 
 .m-main-form-buttonSecondary {
@@ -1002,5 +1129,30 @@ footer {
   color: white;
   font-size: 0.7rem;
   padding: 0 1rem;
+}
+
+.m-main-form-buttons-wrapper button {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .m-main-form-button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .m-main-form-buttons-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .m-main-form-buttons-wrapper .m-main-form-buttonSecondary, .m-main-form-buttons-wrapper .m-main-form-buttonThirdary {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 /*# sourceMappingURL=screen.css.map */
