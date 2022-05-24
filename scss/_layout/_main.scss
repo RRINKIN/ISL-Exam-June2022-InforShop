@@ -99,6 +99,12 @@
     }
 }
 
+.m-main-button-trash {
+    .l-main-form-block-label {
+        display: none;
+    }
+}
+
 .l-main-form-block {   
     background-color: map-get($colors, backgroundLightSecondary);
     color: map-get($colors, backgroundDarkSecondary);
@@ -291,6 +297,7 @@
     .l-main-form-totalPrice-amount{
         font-weight: bold;
         position: relative;
+        color: map-get($colors, backgroundDarkSecondary);
     }
 
     ::before {
@@ -428,14 +435,12 @@
     .l-main-form-commande {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         .l-main-form-block {
-            width: 50%;
+            width: 49%;
             margin: 0;
-            
-            .l-main-form-block-label {
-                display: block;
-            }
+            border-bottom: solid 1px map-get($colors, backgroundDarkSecondary);
         }
     }
 
@@ -447,6 +452,11 @@
             padding: 0;
         }
     }
+    // Contact
+    .l-main-form-block.contact {
+        border-bottom: solid 1px map-get($colors, backgroundDarkSecondary);
+    }
+
 
     .l-main-contact-wrapper {
         display: flex;
@@ -470,7 +480,7 @@
         flex-wrap: wrap;
     }
 
-    .l-main-form {
+    .l-main-form.product {
         width: 30%;
         margin: 0;
         height: 35rem;
@@ -490,6 +500,12 @@
     .l-main-productFiche {
         margin: 0.2rem;
         width: 48%;
+    }
+    // Fin fiche produit
+    // Start inscription
+    .l-main-form-block.inscription {
+        width: 48%;
+        border-bottom: solid 1px map-get($colors, backgroundDarkSecondary);
     }
 
     .l-main-form-block-icon, .l-main-form-block-connexion {
@@ -514,7 +530,8 @@
         display: flex;
         justify-content: space-between;
     }
-
+    // End Inscription
+    // Start Product description
     .l-main-form-productDescription-wrapper {
         display: flex;
         justify-content: space-between;
@@ -546,6 +563,87 @@
             }
         }
     }
+
+    // Panier
+    .l-main-panierTitle-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 1rem 0;
+
+        .l-main-form-date {
+            margin: 0;
+        }
+    }
+    
+    .l-main-form-summary-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .l-main-form-summary-perLine {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: '';
+            height: 1px;
+            width: 100%;
+            background: map-get($colors, backgroundDarkSecondary);
+            position: absolute;
+            bottom: 2.5rem;
+            left: 0rem;
+            z-index: 1;
+        }
+
+        &::after {
+            display: block;
+            content: '';
+            height: 1px;
+            width: 100%;
+            background: map-get($colors, backgroundDarkSecondary);
+            position: absolute;
+            bottom: 0rem;
+            left: 0rem;
+        }
+    }
+
+    .l-main-form-block {   
+
+         > div::before {
+            display: none;
+        }
+
+        .l-main-form-block-label, .m-main-button-trash {
+            display: block;
+            padding: 1rem;
+        }
+    }
+
+    .l-main-form-totalPrice-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .l-main-form-totalPrice {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        float: right;
+
+        .l-main-form-totalPrice-label {
+            width: 50%;
+        }
+
+        .l-main-form-totalPrice-amount{
+            width: 50%;
+        }
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -557,7 +655,7 @@
     }
 
     // fiche produit
-    .l-main-form {
+    .l-main-form.product {
         width: 25%;
         margin: 0;
         height: 35rem;

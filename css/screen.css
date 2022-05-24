@@ -448,6 +448,10 @@ footer {
   color: #216eb8;
 }
 
+.m-main-button-trash .l-main-form-block-label {
+  display: none;
+}
+
 .l-main-form-block {
   background-color: white;
   color: #216eb8;
@@ -676,6 +680,7 @@ footer {
 .l-main-form-totalPrice .l-main-form-totalPrice-amount {
   font-weight: bold;
   position: relative;
+  color: #216eb8;
 }
 
 .l-main-form-totalPrice ::before {
@@ -840,13 +845,14 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .l-main-form-commande .l-main-form-block {
-    width: 50%;
+    width: 49%;
     margin: 0;
-  }
-  .l-main-form-commande .l-main-form-block .l-main-form-block-label {
-    display: block;
+    border-bottom: solid 1px #216eb8;
   }
   .l-main-form-paiement {
     width: 50%;
@@ -854,6 +860,9 @@ footer {
   .l-main-form-paiement .fa-credit-card {
     margin: 0;
     padding: 0;
+  }
+  .l-main-form-block.contact {
+    border-bottom: solid 1px #216eb8;
   }
   .l-main-contact-wrapper {
     display: -webkit-box;
@@ -886,7 +895,7 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .l-main-form {
+  .l-main-form.product {
     width: 30%;
     margin: 0;
     height: 35rem;
@@ -910,6 +919,10 @@ footer {
   .l-main-productFiche {
     margin: 0.2rem;
     width: 48%;
+  }
+  .l-main-form-block.inscription {
+    width: 48%;
+    border-bottom: solid 1px #216eb8;
   }
   .l-main-form-block-icon label, .l-main-form-block-connexion label {
     padding: 0 0 0 2rem;
@@ -968,13 +981,108 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .l-main-panierTitle-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem 0;
+  }
+  .l-main-panierTitle-wrapper .l-main-form-date {
+    margin: 0;
+  }
+  .l-main-form-summary-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .l-main-form-summary-perLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .l-main-form-summary-perLine::before {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #216eb8;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0rem;
+    z-index: 1;
+  }
+  .l-main-form-summary-perLine::after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #216eb8;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+  }
+  .l-main-form-block > div::before {
+    display: none;
+  }
+  .l-main-form-block .l-main-form-block-label, .l-main-form-block .m-main-button-trash {
+    display: block;
+    padding: 1rem;
+  }
+  .l-main-form-totalPrice-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .l-main-form-totalPrice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 30%;
+    float: right;
+  }
+  .l-main-form-totalPrice .l-main-form-totalPrice-label {
+    width: 50%;
+  }
+  .l-main-form-totalPrice .l-main-form-totalPrice-amount {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 900px) {
   .l-main-bloc-promo-wrapper .l-main-bloc-promo3 {
     display: block;
   }
-  .l-main-form {
+  .l-main-form.product {
     width: 25%;
     margin: 0;
     height: 35rem;
@@ -1096,6 +1204,10 @@ footer {
   padding: 0 1rem;
 }
 
+.m-main-form-button {
+  margin-right: 0;
+}
+
 .m-main-form-button-send {
   margin: 1rem;
   background-color: #216eb8;
@@ -1160,6 +1272,7 @@ footer {
 
 .m-main-form-buttonSecondary {
   background-color: #263585;
+  margin-right: 0;
 }
 
 .m-main-form-buttonThirdary {
@@ -1202,6 +1315,9 @@ footer {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .m-main-button-trash {
+    border-bottom: none;
   }
 }
 /*# sourceMappingURL=screen.css.map */

@@ -70,53 +70,60 @@
             </div>
         </div>
         <div class="l-main-form"> 
-            <h1>Mon panier</h1>
-            <div class="l-main-form-date">
-                <p>Dernière mise à jour: <time datetime="2022-03-27T20:25:08">27/03/2022, 20:25:08</time></p>
+            <div class="l-main-panierTitle-wrapper">
+                <h1>Mon panier</h1>
+                <div class="l-main-form-date">
+                    <p>Dernière mise à jour: <time datetime="2022-03-27T20:25:08">27/03/2022, 20:25:08</time></p>
+                </div>
             </div>
-            <form action="post.php" method="post">
-                <div class="l-main-form-block">
-                    <div>
-                        <label for="selectedProduct" class="l-main-form-block-label">Produit</label>
-                        <input type="text" name="selectedProduct" id="selectedProduct" value="Clavier Logitech K860">
+            <form action="post.php" method="post" class="l-main-form-summary-wrapper">
+                <div class="l-main-form-summary-perLine">
+                    <div class="l-main-form-block">
+                        <div>
+                            <label for="selectedProduct" class="l-main-form-block-label">Produit</label>
+                            <input type="text" name="selectedProduct" id="selectedProduct" value="Clavier Logitech K860">
+                        </div>
+                    </div>
+                    <div class="l-main-form-block">
+                        <div>
+                            <label for="selectedQuantity" class="l-main-form-block-label">Quantité</label>
+                            <input type="number" name="selectedQuantity" id="selectedQuantity" value="1">
+                        </div>
+                    </div>
+                    <div class="l-main-form-block">
+                        <div>
+                            <label for="selectedUniquePrice" class="l-main-form-block-label">Prix unitaire</label>
+                            <input type="text" name="selectedUniquePrice" id="selectedUniquePrice" value="100€">
+                        </div>
+                    </div>
+                    <div class="l-main-form-block">
+                        <div>
+                            <label for="selectedUniqueTVA" class="l-main-form-block-label">TVA (%)</label>
+                            <input type="text" name="selectedUniqueTVA" id="selectedUniqueTVA" value="21">
+                        </div>
+                    </div>
+                    <div class="l-main-form-block">
+                        <div>
+                            <label for="selectedTotalPrice" class="l-main-form-block-label">Total HTVA</label>
+                            <input type="text" name="selectedTotalPrice" id="selectedTotalPrice" value="100€">
+                        </div>
+                    </div>
+                    <div class="m-main-button-trash">
+                        <label for="selectedTotalPrice" class="l-main-form-block-label">Action</label>
+                        <button type="button" name="trash" class="m-main-button-trash-send">
+                            <i class="fas fa-trash"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="l-main-form-block">
-                    <div>
-                        <label for="selectedQuantity" class="l-main-form-block-label">Quantité</label>
-                        <input type="number" name="selectedQuantity" id="selectedQuantity" value="1">
+                <div class="l-main-form-totalPrice-wrapper">
+                    <div class="l-main-form-totalPrice">
+                        <p class="l-main-form-totalPrice-label">Total HTVA</p>
+                        <p class="l-main-form-totalPrice-amount">100€</p>
+                        <p class="l-main-form-totalPrice-label">Total TVA</p>
+                        <p class="l-main-form-totalPrice-amount">21€</p>
+                        <p class="l-main-form-totalPrice-label">Total TVAC</p>
+                        <p class="l-main-form-totalPrice-amount">121€</p>
                     </div>
-                </div>
-                <div class="l-main-form-block">
-                    <div>
-                        <label for="selectedUniquePrice" class="l-main-form-block-label">Prix unitaire</label>
-                        <input type="text" name="selectedUniquePrice" id="selectedUniquePrice" value="100€">
-                    </div>
-                </div>
-                <div class="l-main-form-block">
-                    <div>
-                        <label for="selectedUniqueTVA" class="l-main-form-block-label">TVA (%)</label>
-                        <input type="text" name="selectedUniqueTVA" id="selectedUniqueTVA" value="21">
-                    </div>
-                </div>
-                <div class="l-main-form-block">
-                    <div>
-                        <label for="selectedTotalPrice" class="l-main-form-block-label">Total HTVA</label>
-                        <input type="text" name="selectedTotalPrice" id="selectedTotalPrice" value="100€">
-                    </div>
-                </div>
-                <div class="m-main-button-trash">
-                    <button type="button" name="trash" class="m-main-button-trash-send">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                </div>
-                <div class="l-main-form-totalPrice">
-                    <p class="l-main-form-totalPrice-label">Total HTVA</p>
-                    <p class="l-main-form-totalPrice-amount">100€</p>
-                    <p class="l-main-form-totalPrice-label">Total TVA</p>
-                    <p class="l-main-form-totalPrice-amount">21€</p>
-                    <p class="l-main-form-totalPrice-label">Total TVAC</p>
-                    <p class="l-main-form-totalPrice-amount">121€</p>
                 </div>
                 <div class="m-main-form-buttons">
                     <button type="button" name="inscription" class="m-main-form-button-sendOrder">
