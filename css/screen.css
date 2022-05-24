@@ -375,8 +375,8 @@ footer {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-shadow: 1px 1px 1px #918e8e;
-          box-shadow: 1px 1px 1px #918e8e;
+  -webkit-box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.15);
+          box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.15);
 }
 
 .fa-home {
@@ -394,6 +394,10 @@ footer {
   color: #e37823;
   font-size: 1rem;
   margin: 0 1rem;
+}
+
+.l-main-map iframe {
+  width: 100%;
 }
 
 .l-main-pageIndex {
@@ -420,8 +424,8 @@ footer {
 }
 
 .l-main-form {
-  -webkit-box-shadow: 1px 1px 1px #918e8e;
-          box-shadow: 1px 1px 1px #918e8e;
+  -webkit-box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.15);
+          box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.15);
 }
 
 .l-main-form, .l-main-bloc {
@@ -496,7 +500,7 @@ footer {
   left: 0rem;
 }
 
-.l-main-form-block-icon, .l-main-form-block-connexion {
+.l-main-form-block-icon, .l-main-form-block-connexion, .l-main-form-block-icon-commande {
   padding: 1rem 0;
   position: relative;
   margin: 0 1rem 0 0;
@@ -512,7 +516,7 @@ footer {
           justify-content: start;
 }
 
-.l-main-form-block-icon div::before, .l-main-form-block-connexion div::before {
+.l-main-form-block-icon div::before, .l-main-form-block-connexion div::before, .l-main-form-block-icon-commande div::before {
   display: block;
   content: '';
   height: 1px;
@@ -523,7 +527,7 @@ footer {
   left: 0rem;
 }
 
-.l-main-form-block-icon input, .l-main-form-block-connexion input {
+.l-main-form-block-icon input, .l-main-form-block-connexion input, .l-main-form-block-icon-commande input {
   border: 0px;
   color: #918e8e;
   width: 100%;
@@ -531,7 +535,7 @@ footer {
   outline: 0;
 }
 
-.l-main-form-block-icon i, .l-main-form-block-connexion i {
+.l-main-form-block-icon i, .l-main-form-block-connexion i, .l-main-form-block-icon-commande i {
   padding: 0 1rem 0 0;
   position: absolute;
   right: 0;
@@ -630,8 +634,8 @@ footer {
 
 .l-main-block {
   background-color: white;
-  -webkit-box-shadow: 1px 1px 1px #918e8e;
-          box-shadow: 1px 1px 1px #918e8e;
+  -webkit-box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.15);
+          box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.15);
   padding: 1rem;
   margin: 1rem 0;
 }
@@ -883,9 +887,6 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .l-main-form-block {
-    width: 50%;
   }
   .l-main-form-productDescription-wrapper {
     display: -webkit-box;

@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    box-shadow: 1px 1px 1px map-get($colors, textOnMedium);
+    box-shadow: 1px 1px 1px map-get($colors, shadow);
 }
 
 .fa-home {
@@ -40,6 +40,11 @@
     color: map-get($colors, decoration);
     font-size: 1rem;
     margin: 0 1rem;
+}
+
+//Map
+.l-main-map iframe {
+        width: 100%;
 }
 
 //Ariane Line for product navigation
@@ -70,7 +75,7 @@
 }
 
 .l-main-form {
-    box-shadow: 1px 1px 1px map-get($colors, textOnMedium);
+    box-shadow: 1px 1px 1px map-get($colors, shadow);
 
 }
 
@@ -146,7 +151,7 @@
     }
 }
 
-.l-main-form-block-icon, .l-main-form-block-connexion {
+.l-main-form-block-icon, .l-main-form-block-connexion, .l-main-form-block-icon-commande {
     padding: 1rem 0;
     position: relative;
     margin: 0 1rem 0 0;
@@ -246,7 +251,7 @@
 // Contact block
 .l-main-block {
     background-color: map-get($colors, backgroundLightSecondary);
-    box-shadow: 1px 1px 1px map-get($colors, textOnMedium);
+    box-shadow: 1px 1px 1px map-get($colors, shadow);
     padding: 1rem;
     margin: 1rem 0;
 
@@ -478,10 +483,6 @@
     .l-main-form-block-groupPer2 {
         display: flex;
         justify-content: space-between;
-    }
-
-    .l-main-form-block {
-        width: 50%;
     }
 
     .l-main-form-productDescription-wrapper {
