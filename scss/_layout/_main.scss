@@ -71,9 +71,11 @@
 
 .l-main-form {
     box-shadow: 1px 1px 1px map-get($colors, textOnMedium);
+
 }
 
 .l-main-form, .l-main-bloc {
+    background-color: map-get($colors, backgroundLightSecondary);
     margin: 1rem 0;
     padding: 1rem;
 }
@@ -243,7 +245,10 @@
 
 // Contact block
 .l-main-block {
+    background-color: map-get($colors, backgroundLightSecondary);
+    box-shadow: 1px 1px 1px map-get($colors, textOnMedium);
     padding: 1rem;
+    margin: 1rem 0;
 
     p {
         color: map-get($colors, textOnMedium);

@@ -425,6 +425,7 @@ footer {
 }
 
 .l-main-form, .l-main-bloc {
+  background-color: white;
   margin: 1rem 0;
   padding: 1rem;
 }
@@ -628,7 +629,11 @@ footer {
 }
 
 .l-main-block {
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 1px #918e8e;
+          box-shadow: 1px 1px 1px #918e8e;
   padding: 1rem;
+  margin: 1rem 0;
 }
 
 .l-main-block p {
