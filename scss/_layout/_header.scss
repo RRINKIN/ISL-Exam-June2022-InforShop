@@ -171,11 +171,8 @@ header {
     }
 
     .l-nav {
-        display: flex;
-        flex-direction: row;
         justify-content: start;
         align-items: flex-start;
-        flex-wrap: wrap;
     }
 
     .l-nav-top {

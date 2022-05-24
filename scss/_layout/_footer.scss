@@ -18,16 +18,9 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-    footer {
-        background: map-get($colors, gradient);
-        padding-bottom: 1rem;
-    }
     
     .l-footer p {
         font-size: 1rem;
         text-align: left;
-        padding-top: 1.5rem;
-        padding-left: 2rem;
-        color: map-get($colors, textOnLight);
     }
 }

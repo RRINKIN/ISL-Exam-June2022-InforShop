@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px map-get($colors, textOnMedium);
 }
 
 .fa-home {
@@ -69,11 +69,13 @@
     }
 }
 
-.l-main-form, .l-main-block, .l-main-bloc {
-    background-color: map-get($colors, backgroundLightSecondary);
+.l-main-form {
+    box-shadow: 1px 1px 1px map-get($colors, textOnMedium);
+}
+
+.l-main-form, .l-main-bloc {
     margin: 1rem 0;
     padding: 1rem;
-    color: map-get($colors, backgroundDarkSecondary);
 }
 
 .l-main-form-date {
@@ -91,6 +93,8 @@
 }
 
 .l-main-form-block {   
+    background-color: map-get($colors, backgroundLightSecondary);
+    color: map-get($colors, backgroundDarkSecondary);
     padding: 1rem 0;
     position: relative;
     margin: 0 1rem 0 0;
