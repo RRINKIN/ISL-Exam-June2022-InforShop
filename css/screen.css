@@ -592,8 +592,10 @@ footer {
 
 .l-main-productFiche {
   background-color: white;
-  margin: 1rem;
   color: #216eb8;
+  -webkit-box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.15);
+          box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.15);
+  margin: 0.5rem 0;
 }
 
 .l-main-productFiche img {
@@ -870,6 +872,45 @@ footer {
   .l-main-contact-wrapper .l-main-block {
     width: 30%;
   }
+  .l-main-product-superWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .l-main-form {
+    width: 30%;
+    margin: 0;
+    height: 35rem;
+  }
+  .l-main-product {
+    width: 70%;
+  }
+  .l-main-product-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .l-main-productFiche {
+    margin: 0.2rem;
+    width: 48%;
+  }
   .l-main-form-block-icon label, .l-main-form-block-connexion label {
     padding: 0 0 0 2rem;
   }
@@ -932,6 +973,17 @@ footer {
 @media screen and (min-width: 900px) {
   .l-main-bloc-promo-wrapper .l-main-bloc-promo3 {
     display: block;
+  }
+  .l-main-form {
+    width: 25%;
+    margin: 0;
+    height: 35rem;
+  }
+  .l-main-product {
+    width: 75%;
+  }
+  .l-main-productFiche {
+    width: 32%;
   }
 }
 
