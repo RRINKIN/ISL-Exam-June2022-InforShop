@@ -1272,7 +1272,7 @@ footer {
 
 .m-main-form-buttonSecondary {
   background-color: #263585;
-  margin-right: 0;
+  margin: 0;
 }
 
 .m-main-form-buttonThirdary {
@@ -1315,6 +1315,7 @@ footer {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    margin: 0 1rem 0 0;
   }
   .m-main-button-trash {
     border-bottom: none;

@@ -77,7 +77,7 @@
 
 .m-main-form-buttonSecondary {
     background-color: map-get($colors, backgroundDarkMain);
-    margin-right: 0;
+    margin: 0;
 }
 
 .m-main-form-buttonThirdary {
@@ -117,6 +117,7 @@
     
         .m-main-form-buttonSecondary, .m-main-form-buttonThirdary {
             width: fit-content;
+            margin: 0 1rem 0 0;
         }
     }   
     .m-main-button-trash {
