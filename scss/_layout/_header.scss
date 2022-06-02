@@ -33,6 +33,13 @@ header {
     width: 4rem;
 }
 
+.l-nav-logo-link {
+    height: 3rem;
+    width: 4rem;
+    display: inline-block;
+    z-index: 1;
+}
+
 // burger
 .l-nav-menu-wrapper {
     background-color: map-get($colors, backgroundDarkMain);
