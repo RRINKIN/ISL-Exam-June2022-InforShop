@@ -1,7 +1,7 @@
 // Menu used for the mobile version of the website 
 .l-nav-tree {
-    position: absolute;
-    left: -150vw;
+    position: fixed;
+    left: -100vw;
     top: 0;
     transition-duration: 1s;
     width: 100vw;
@@ -9,10 +9,10 @@
     background: map-get($colors, gradient);
     z-index: 2;
 
-    .trigger:checked ~ & {
+    /*.trigger:checked ~ & {
         left: 0;
-      }
-    
+      }*/
+
     li {
         list-style: none;
     }
@@ -49,6 +49,10 @@
             }
         }
     }
+}
+
+#trigger:checked ~ .l-nav-tree {
+    left: 0;
 }
 
 @media screen and (min-width: 600px) {

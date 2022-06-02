@@ -127,6 +127,10 @@ header {
   background: white;
 }
 
+.l-nav-menu {
+  position: relative;
+}
+
 .l-nav-burger {
   height: 3rem;
   width: 3rem;
@@ -153,8 +157,17 @@ header {
   background: #e37823;
 }
 
+.l-nav-menu-label {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+}
+
 .trigger {
-  display: none;
+  position: absolute;
+  left: -150vw;
 }
 
 .l-nav-icons {
@@ -1096,8 +1109,8 @@ footer {
 }
 
 .l-nav-tree {
-  position: absolute;
-  left: -150vw;
+  position: fixed;
+  left: -100vw;
   top: 0;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -1105,10 +1118,9 @@ footer {
   height: 100vh;
   background: linear-gradient(45deg, #216eb8, #263585);
   z-index: 2;
-}
-
-.trigger:checked ~ .l-nav-tree {
-  left: 0;
+  /*.trigger:checked ~ & {
+        left: 0;
+      }*/
 }
 
 .l-nav-tree li {
@@ -1147,6 +1159,10 @@ footer {
 
 .l-nav-tree a:hover::after {
   opacity: 1;
+}
+
+#trigger:checked ~ .l-nav-tree {
+  left: 0;
 }
 
 @media screen and (min-width: 600px) {

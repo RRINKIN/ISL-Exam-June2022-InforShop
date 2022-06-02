@@ -68,6 +68,10 @@ header {
     }
 }
 
+.l-nav-menu {
+    position: relative;
+}
+
 .l-nav-burger {
     height: 3rem;
     width: 3rem;
@@ -85,8 +89,17 @@ header {
     }
 }
 
+.l-nav-menu-label {
+    display: block;
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+}
+
 .trigger {
-    display: none;
+    position: absolute;
+    left: -150vw;
   }
 
 // account icons
