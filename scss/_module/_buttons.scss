@@ -95,7 +95,8 @@
     background-color: map-get($colors, backgroundDarkMain);
     color: map-get($colors, textOnLight);
     font-size: 0.7rem;
-    padding: 0 1rem;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 .m-main-form-buttons-wrapper {

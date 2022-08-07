@@ -47,7 +47,7 @@ header {
     width: 3.5rem;
     border-radius: 0 0 0 45%;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 
@@ -64,7 +64,7 @@ header {
         position: relative;
         transition: 1s;
     }
-    
+
     .trigger:checked ~ & span:nth-child(2) {
         opacity: 0;
         position: relative;
@@ -200,26 +200,26 @@ header {
         width: 100%;
         padding: 1rem 1rem 0 1rem;
     }
-    
+
     // logo
     .l-nav-logo-wrapper {
         height: 5rem;
         width: 7rem;
     }
-    
+
     .l-nav-logo {
         height: 5rem;
         width: 6rem;
         margin-top: 1rem;
         order: 1;
     }
-    
+
     // account icons
     .l-nav-icons {
         order: 3;
         margin: 0 1rem;
         width: auto;
-    
+
         p {
             font-size: 1rem;
         }
@@ -231,7 +231,7 @@ header {
         width: auto;
         flex: 1 1 auto;
     }
-    
+
     .l-nav-search-wrapper input,i {
         margin: 0 1rem;
     }

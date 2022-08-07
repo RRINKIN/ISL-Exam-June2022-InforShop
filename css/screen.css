@@ -1313,7 +1313,8 @@ footer {
   background-color: #263585;
   color: white;
   font-size: 0.7rem;
-  padding: 0 1rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .m-main-form-buttons-wrapper button {
