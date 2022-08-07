@@ -211,6 +211,10 @@ header {
           align-items: center;
 }
 
+.l-nav-icons-account p, .l-nav-icons-cart p {
+  color: white;
+}
+
 .l-nav-icons-cart {
   position: relative;
 }
@@ -1125,9 +1129,6 @@ footer {
   height: 100vh;
   background: linear-gradient(45deg, #216eb8, #263585);
   z-index: 2;
-  /*.trigger:checked ~ & {
-        left: 0;
-      }*/
 }
 
 .l-nav-tree li {
@@ -1173,6 +1174,9 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  .l-nav-menu-label {
+    display: none;
+  }
   .l-nav-tree {
     position: relative;
     left: 0vw;

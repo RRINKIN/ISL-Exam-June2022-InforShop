@@ -9,10 +9,6 @@
     background: map-get($colors, gradient);
     z-index: 2;
 
-    /*.trigger:checked ~ & {
-        left: 0;
-      }*/
-
     li {
         list-style: none;
     }
@@ -56,6 +52,10 @@
 }
 
 @media screen and (min-width: 600px) {
+    .l-nav-menu-label {
+        display: none;
+    }
+
     .l-nav-tree {
         position: relative;
         left: 0vw;
